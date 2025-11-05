@@ -13,7 +13,7 @@ Critica:
 + perspectiva histórica y curiosidad intelectual
 
 Asegura el "dumb-down" de la academia debido a que no mantuvieron la llama de la curiosidad y a la industria.
-
+a
 ### Como pensaban las ciencias de la computación en los 60s
 
 Science is the attempt to detect and gather phenomena to explain it via creating models (theories) of some kind that produce similar phenomena, and to do this in ways that try to get around what is weak about our senses and abilities to think.
