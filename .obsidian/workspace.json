@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "9a2435cd3a9fe849",
@@ -178,7 +177,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "99ad38d7cd16c4f0",
+  "active": "ce60ae1c73f50e25",
   "lastOpenFiles": [
     "Fail Fast.md",
     "Method dispatch generalized.md",
