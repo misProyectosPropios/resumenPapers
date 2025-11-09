@@ -81,14 +81,15 @@
             "id": "6e59825736c29cf7",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "split-diff-view",
               "state": {
-                "file": "The Design of Everyday Things.md",
-                "mode": "source",
-                "source": false
+                "aFile": "Design Principles Behind Smalltalk.md",
+                "bFile": "Design Principles Behind Smalltalk.md",
+                "aRef": "HEAD",
+                "bRef": ""
               },
-              "icon": "lucide-file",
-              "title": "The Design of Everyday Things"
+              "icon": "diff",
+              "title": "Diff: Design Principles Behind Smalltalk"
             }
           }
         ],
@@ -250,8 +251,12 @@
   },
   "active": "6e59825736c29cf7",
   "lastOpenFiles": [
-    "images/Carelmans Coffeepot for Masochists.png",
     "The Design of Everyday Things.md",
+    "PDFs/Polymorphic Hierarchy.pdf",
+    "PDFs/Brooks_1986_-_No_Silver_Bullet.pdf",
+    "PDFs",
+    "images/relation mind-computer.png",
+    "images/Carelmans Coffeepot for Masochists.png",
     "images",
     "images",
     "Fail Fast.md",
