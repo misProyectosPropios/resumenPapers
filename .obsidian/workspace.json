@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "b39d8ae4b9de6a4b",
+        "id": "0b9527fbdf788dee",
         "type": "tabs",
         "children": [
           {
-            "id": "0ccbacf6c638b1d6",
+            "id": "63e09a47e322f99a",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "The Design of Everyday Things.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "The Design of Everyday Things"
             }
           }
         ]
@@ -74,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "9a2435cd3a9fe849",
@@ -174,8 +177,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "0ccbacf6c638b1d6",
+  "active": "63e09a47e322f99a",
   "lastOpenFiles": [
+    "Respuesta sobre Computer Science de Alan Kay en Quora.md",
+    "Self - The Power Of Simplicity.md",
+    "The Design of Everyday Things.md",
+    "A Simple Technique for Handling Multiple Polymorphism.md",
     "Polymorphic Hierarchies.md",
     "Method Object.md",
     "Design Principles Behind Smalltalk.md",
@@ -187,15 +194,12 @@
     "Images/Pasted image 20251103151922.png",
     "Introducing the Smalltalk-80 System.md",
     "Null Object Pattern.md",
-    "Respuesta sobre Computer Science de Alan Kay en Quora.md",
     "Programming As Theory Building.md",
     "Images",
     "PDFs/Brooks_1986_-_No_Silver_Bullet.pdf",
     "PDFs",
     "Nueva carpeta",
     "No Silver Bullet – Essence and Accident in Software Engineering.md",
-    "Self - The Power Of Simplicity.md",
-    "A Simple Technique for Handling Multiple Polymorphism.md",
     "Fail Fast.md",
     "Modern Software Engineering - Cap 1, Cap 2.md",
     "Active Variables In Smalltalk-80.md",
@@ -203,7 +207,6 @@
     "Design Patterns - Elements of Reusable Object-Oriented Software.md",
     "Object Recursion.md",
     "Blue Book Capítulos 6, 7, 8.md",
-    "The Design of Everyday Things.md",
     "2025-11-02.md",
     "Untitled 2.base",
     "Untitled 1.base",
