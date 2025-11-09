@@ -1,7 +1,6 @@
 ## Articulo
 
-Link: 
-
+Link: [[Programming as Theory Building.pdf]]
 ## Introducción
 
 Habla sobre que va a tratar el paper. Por qué es necesario entenderlo, la forma de entenderlo de Naur y experiencias.

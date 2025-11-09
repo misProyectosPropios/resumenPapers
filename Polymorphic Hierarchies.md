@@ -1,3 +1,5 @@
+Link: [[Polymorphic Hierarchy.pdf]]
+
 ## Introduction
 
 En el código suele haber muchos métodos que hacen lo mismo

@@ -5,105 +5,66 @@
     "children": [
       {
         "id": "0b9527fbdf788dee",
-        "id": "20c2f72970415bec",
         "type": "tabs",
         "children": [
           {
-            "id": "63e09a47e322f99a",
-            "id": "99ad38d7cd16c4f0",
+            "id": "769941be2722dd1b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Polymorphic Hierarchies.md",
+                "file": "Patrones/Pattern - Proxy.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Polymorphic Hierarchies"
+              "title": "Pattern - Proxy"
             }
           },
           {
-            "id": "8aca5e82c211c114",
+            "id": "fd17ac7e2a81ce60",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Fail Fast.md",
+                "file": "Patrones/Template Method.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Fail Fast"
+              "title": "Template Method"
             }
           },
           {
-            "id": "5bac129fe920a548",
+            "id": "d0e72782050d40e1",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Introducing the Smalltalk-80 System.md",
+                "file": "Heurísticas/Sacar código repetido.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Introducing the Smalltalk-80 System"
+              "title": "Sacar código repetido"
             }
           },
           {
-            "id": "a16ba7551db3024f",
+            "id": "a6e5e16d37097790",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "No Silver Bullet – Essence and Accident in Software Engineering.md",
+                "file": "Teoricas/Esencia.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "No Silver Bullet – Essence and Accident in Software Engineering"
-            }
-          },
-          {
-            "id": "8dad5bbd615ee17e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "The Design of Everyday Things.md",
-                "mode": "source",
-                "source": false
-              },
-              "type": "markdown",
-              "state": {
-                "file": "Fail Fast.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "The Design of Everyday Things"
-            }
-              "title": "Fail Fast"
-            }
-          },
-          {
-            "id": "6e59825736c29cf7",
-            "type": "leaf",
-            "state": {
-              "type": "split-diff-view",
-              "state": {
-                "aFile": "Design Principles Behind Smalltalk.md",
-                "bFile": "Design Principles Behind Smalltalk.md",
-                "aRef": "HEAD",
-                "bRef": ""
-              },
-              "icon": "diff",
-              "title": "Diff: Design Principles Behind Smalltalk"
+              "title": "Esencia"
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -126,7 +87,7 @@
                 "autoReveal": false
               },
               "icon": "lucide-folder-closed",
-              "title": "Explorador de archivos"
+              "title": "Files"
             }
           },
           {
@@ -161,7 +122,6 @@
     ],
     "direction": "horizontal",
     "width": 300
-    "width": 200
   },
   "right": {
     "id": "9a2435cd3a9fe849",
@@ -250,57 +210,58 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Abrir selector rápido": false,
-      "graph:Abrir vista gráfica": false,
-      "canvas:Crear nuevo lienzo": false,
-      "daily-notes:Abrir la nota de hoy": false,
-      "templates:Insertar plantilla": false,
-      "command-palette:Abrir paleta de comandos": false,
-      "bases:Crear nueva base": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false,
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "6e59825736c29cf7",
+  "active": "a6e5e16d37097790",
   "lastOpenFiles": [
+    "Heurísticas/Sacar if.md",
+    "Teoricas/Esencia.md",
+    "Heurísticas/Sacar código repetido.md",
     "The Design of Everyday Things.md",
+    "Patrones/Template Method.md",
+    "Heurísticas",
+    "Patrones/Pattern - Strategy.md",
+    "Patrones/Pattern - Proxy.md",
+    "Patrones/Pattern - Builder.md",
+    "Teoricas/Excepciones.md",
+    "Pattern Abuser.md",
+    "Teoricas",
+    "Patrones/Pattern - Decorator.md",
+    "Patrones/Pattern - Composite.md",
+    "Patrones",
+    "Modern Software Engineering - Cap 1, Cap 2 Cap 3.md",
+    "Self - The Power Of Simplicity.md",
+    "Polymorphic Hierarchies.md",
+    "PDFs/Programming as Theory Building.pdf",
+    "Programming As Theory Building.md",
+    "PDFs/Programming as Theory Building-1.pdf",
+    "Respuesta sobre Computer Science de Alan Kay en Quora.md",
+    "Images/Carelmans Coffeepot for Masochists.png",
+    "A Simple Technique for Handling Multiple Polymorphism.md",
+    "Method Object.md",
+    "Design Principles Behind Smalltalk.md",
+    "Images/relation mind-computer.png",
+    "conflict-files-obsidian-git.md",
+    "Method dispatch generalized.md",
     "PDFs/Polymorphic Hierarchy.pdf",
     "Images/Pasted image 20251103151920.png",
     "Images/Pasted image 20251103151922.png",
     "Introducing the Smalltalk-80 System.md",
     "Null Object Pattern.md",
-    "Programming As Theory Building.md",
     "Images",
     "PDFs/Brooks_1986_-_No_Silver_Bullet.pdf",
     "PDFs",
-    "images/relation mind-computer.png",
-    "images/Carelmans Coffeepot for Masochists.png",
-    "images",
-    "images",
-    "Fail Fast.md",
-    "Programming As Theory Building.md",
-    "Respuesta sobre Computer Science de Alan Kay en Quora.md",
-    "Self - The Power Of Simplicity.md",
-    "Object Recursion.md",
+    "Nueva carpeta",
     "No Silver Bullet – Essence and Accident in Software Engineering.md",
     "Fail Fast.md",
-    "Introducing the Smalltalk-80 System.md",
-    "Polymorphic Hierarchies.md",
-    "Pattern Abuser.md",
-    "Method dispatch generalized.md",
-    "Modern Software Engineering - Cap 1, Cap 2.md",
-    "Active Variables In Smalltalk-80.md",
-    "Design Patterns - Elements of Reusable Object-Oriented Software.md",
-    "Method Object.md",
-    "Null Object Pattern.md",
-    "A Simple Technique for Handling Multiple Polymorphism.md",
-    "Design Principles Behind Smalltalk.md",
-    "Untitled",
-    "Blue Book Capítulos 6, 7, 8.md",
-    "2025-11-02.md",
-    "Untitled 2.base",
-    "Untitled 1.base",
-    "Untitled.canvas",
-    "Untitled.base",
-    "Welcome.md"
+    "Untitled.canvas"
   ]
 }
