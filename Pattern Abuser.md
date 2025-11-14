@@ -30,3 +30,20 @@ Los patrones que usaba:
 + Los desarrolladores  no entendían el código nuevo. No tenían la teoría del modelado para esos refactors. 
 + Llegó a una espiral de aplicar más "patterns" para resolver problemas
 + No sabía cuando aplicarlos y cuando no (muy subjetivo como la materia)
+
+## Consecuencias del pattern abuser
+
++ Generará una sobre generalización innecesaria.
++ Nos desconectamos del problema al agregar mensajes a los objetos (ya que los objetos son lo que saben responder)
++ Diluimos el modelado con el mundo real.
++ Generará una complejidad accidental al agregar demasiados mensajes y generar una serie de envío de mensajes muy grande.
+
+## Razones por las que abusaban de patrones
++ Surgen a partir del diseño y de heurísticas, no al revés (aunque las heurísticas hay que saber cuando utilizarlas)
++ Encajar un patrón por la fuerza en un modelado
+
+## Como sabemos si un patrón estuvo bien aplicado?
+
++ Dejamos abiertos cambios posibles, no porque pensemos que van a ocurrir, sino porque ya tenemos unos casos en donde paso (ejemplo: `account summary`).
++ Según nuestro dominio del problema
++ Depende los criterios que tomemos: performance, modelado, seguridad, declaratividad, etc.

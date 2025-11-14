@@ -43,5 +43,14 @@
       ],
       "key": "5"
     }
+  ],
+  "editor:toggle-code": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "C"
+    }
   ]
 }
