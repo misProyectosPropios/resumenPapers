@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "90e5f2ca1a24a288",
+        "id": "d039453096200ff2",
         "type": "tabs",
         "children": [
           {
-            "id": "3b2d284a4cb59fa2",
+            "id": "37fdd40ea461a7c4",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "No Silver Bullet – Essence and Accident in Software Engineering.md",
+                "file": "Patrones/Template Method.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "No Silver Bullet – Essence and Accident in Software Engineering"
+              "title": "Template Method"
             }
           }
         ]
@@ -44,7 +44,7 @@
                 "autoReveal": false
               },
               "icon": "lucide-folder-closed",
-              "title": "Explorador de archivos"
+              "title": "Files"
             }
           },
           {
@@ -167,28 +167,19 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Abrir selector rápido": false,
-      "graph:Abrir vista gráfica": false,
-      "canvas:Crear nuevo lienzo": false,
-      "daily-notes:Abrir la nota de hoy": false,
-      "templates:Insertar plantilla": false,
-      "command-palette:Abrir paleta de comandos": false,
-      "bases:Crear nueva base": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false,
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "3b2d284a4cb59fa2",
+  "active": "37fdd40ea461a7c4",
   "lastOpenFiles": [
-    "Fail Fast.md",
-    "PDFs/failFast.pdf",
-    "Pattern Abuser.md",
-    "A Simple Technique for Handling Multiple Polymorphism.md",
-    "Teoricas/Excepciones.md",
-    "Teoricas/Esencia.md",
-    "Teoricas",
-    "Patrones/Template Method.md",
-    "Patrones/Pattern.md",
-    "Patrones/Pattern - Strategy.md",
+    "Patrones/Pattern - Visitor.md",
     "Patrones/Pattern - State.md",
     "Patrones/Pattern - Proxy.md",
     "Patrones/Pattern - Decorator.md",
@@ -196,27 +187,38 @@
     "Patrones/Pattern - Builder.md",
     "Patrones/Pattern - Bridge.md",
     "Patrones/Pattern - Behavioral.md",
+    "Patrones/Pattern - Strategy.md",
+    "images/strategyPattern.png",
+    "images/visitorPattern.png",
+    "_templates/Pattern template.md",
+    "_templates",
+    "Object Recursion.md",
+    "Modern Software Engineering - Cap 1, Cap 2 Cap 3.md",
+    "Method Object.md",
+    "Design Patterns - Elements of Reusable Object-Oriented Software.md",
+    "PDFs/Brooks_1986_-_No_Silver_Bullet.pdf",
+    "A Simple Technique for Handling Multiple Polymorphism.md",
+    "No Silver Bullet – Essence and Accident in Software Engineering.md",
+    "Fail Fast.md",
+    "PDFs/failFast.pdf",
+    "Pattern Abuser.md",
+    "Teoricas/Excepciones.md",
+    "Teoricas/Esencia.md",
+    "Teoricas",
+    "Patrones/Template Method.md",
+    "Patrones/Pattern.md",
     "Patrones",
     "PDFs/Programming as Theory Building.pdf",
-    "Modern Software Engineering - Cap 1, Cap 2 Cap 3.md",
     "images/StatePattern.png",
     "Heurísticas/Sacar if.md",
     "Heurísticas/Sacar código repetido.md",
     "Heurísticas",
     "The Design of Everyday Things.md",
     "PDFs/Polymorphic Hierarchy.pdf",
-    "PDFs/Brooks_1986_-_No_Silver_Bullet.pdf",
     "PDFs",
     "images/relation mind-computer.png",
     "images/Carelmans Coffeepot for Masochists.png",
     "images",
-    "images",
-    "Programming As Theory Building.md",
-    "Respuesta sobre Computer Science de Alan Kay en Quora.md",
-    "Self - The Power Of Simplicity.md",
-    "Object Recursion.md",
-    "No Silver Bullet – Essence and Accident in Software Engineering.md",
-    "Introducing the Smalltalk-80 System.md",
     "Untitled.canvas"
   ]
 }
