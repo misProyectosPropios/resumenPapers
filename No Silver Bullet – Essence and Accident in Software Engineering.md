@@ -8,13 +8,13 @@ Link: https://worrydream.com/refs/Brooks_1986_-_No_Silver_Bullet.pdf
 El desarrollo del software tiene tareas esenciales y tareas accidentales. Los desarrollos pasados solucionaron tareas accidentales. Como podemos aumentar la productividad? Tenemos que basarnos en la parte esencial.
 ## Introduction
 
-Queremos una *Silver buller* para evitar que los programas se vuelvan monstruos (usa la metáfora del hombre lobo) 
+Queremos una *Silver bullet* para evitar que los programas se vuelvan monstruos (usa la metáfora del hombre lobo) 
 
 El primer paso es el reemplazo de la teoría por la inicial (*germ theory*)
 ## Does It Have To Be Hard? – Essential Difficulties
 
 Es complicado ver que encontraremos una solución de mejora como la del hardware por esencia compleja del software. A diferencia del hardware.
-La esencia es un constructo de *interlocking concepts*.  Lo difícil de construir software es la especificación, diseño y testeo. 
+La esencia es una construcción de *interlocking concepts*.  Lo difícil de construir software es la especificación, diseño y testeo. 
 Si es cierto, siempre va a ser difícil construir software.
 
 + Complexity: #TODO
