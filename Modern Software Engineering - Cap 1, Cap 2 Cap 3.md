@@ -165,3 +165,10 @@ Consejos:
 + Being empirical
 
 #### Experts at Managing Complexity
+
+Consejos:
++ Modularity
++ Cohesion
++ Separation of concerns
++ Information hiding/abstraction
++ Coupling
