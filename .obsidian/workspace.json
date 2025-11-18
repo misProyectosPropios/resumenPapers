@@ -176,7 +176,7 @@
             }
           }
         ],
-        "currentTab": 11
+        "currentTab": 10
       }
     ],
     "direction": "vertical"
@@ -332,10 +332,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "65ad849353b9437e",
+  "active": "2b54231e33c55b5c",
   "lastOpenFiles": [
-    "Patrones/Pattern - Builder.md",
     "Patrones/Pattern - Abstract Factory.md",
+    "Patrones/Pattern - Builder.md",
     "Patrones/Pattern - Adapter.md",
     "Patrones/Pattern - Behavioral.md",
     "Patrones/Pattern - Bridge.md",
