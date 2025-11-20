@@ -190,8 +190,18 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "ff091f5c4ef1d20f",
+  "active": "ce60ae1c73f50e25",
   "lastOpenFiles": [
+    "_templates/Summary Paper.md",
+    "Patrones/Pattern - Adapter.md",
+    "Patrones/Pattern - Abstract Factory.md",
+    "PDFs/active-variables-in-smalltalk-80.pdf",
+    "images/proxyPattern.png",
+    "images/decoratorPattern.png",
+    "images/compositePattern.png",
+    "images/adapterPattern.png",
+    "Definiciones/Waterfall.md",
+    "Definiciones",
     "Self - The Power Of Simplicity.md",
     "Respuesta sobre Computer Science de Alan Kay en Quora.md",
     "Programming As Theory Building.md",
@@ -218,21 +228,15 @@
     "Modern Software Engineering - Cap 1, Cap 2 Cap 3.md",
     "Design Patterns - Elements of Reusable Object-Oriented Software.md",
     "PDFs/Brooks_1986_-_No_Silver_Bullet.pdf",
-    "A Simple Technique for Handling Multiple Polymorphism.md",
-    "No Silver Bullet – Essence and Accident in Software Engineering.md",
     "PDFs/failFast.pdf",
-    "Pattern Abuser.md",
-    "Teoricas/Excepciones.md",
     "Teoricas",
     "Patrones",
     "PDFs/Programming as Theory Building.pdf",
     "images/StatePattern.png",
     "Heurísticas",
     "PDFs/Polymorphic Hierarchy.pdf",
-    "PDFs",
     "images/relation mind-computer.png",
     "images/Carelmans Coffeepot for Masochists.png",
-    "images",
     "Untitled.canvas"
   ]
 }

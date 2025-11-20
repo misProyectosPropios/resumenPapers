@@ -5,7 +5,8 @@ able. Strategy lets the algorithm vary independently from clients that use it.
 
 ## Example
 
-Métodos de pago. Cada uno hace lo mismo (una extracción y un deposito por ejemplo), pero queremos que lo haga según una estratagia diferente en cada caso
++ Métodos de pago. Cada uno hace lo mismo (una extracción y un deposito por ejemplo), pero queremos que lo haga según una estrategia diferente en cada caso
++ Al hacer logs queremos que puedan hacer diferentes acciones: como imprimir en otro sitio (en consola por ejemplo). Si se quiere agregar más accionar usando diferentes acciones podemos usar un composite.
 
 ## Que evita
 + Romper el encapsulamiento
