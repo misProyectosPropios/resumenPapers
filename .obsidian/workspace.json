@@ -4,37 +4,20 @@
     "type": "split",
     "children": [
       {
-        "id": "0b3b9fabd63a7d7c",
+        "id": "305e412c2e4bde0d",
         "type": "tabs",
         "children": [
           {
-            "id": "b1cb2d117334024d",
+            "id": "be818a5029739101",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Blue Book Capítulos 6, 7, 8.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Blue Book Capítulos 6, 7, 8"
-            }
-          },
-          {
-            "id": "ff091f5c4ef1d20f",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.10.3"
-              },
-              "icon": "lucide-book-up",
-              "title": "Release Notes 1.10.3"
+              "title": "New tab"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -190,8 +173,17 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "ce60ae1c73f50e25",
+  "active": "65ad849353b9437e",
   "lastOpenFiles": [
+    "Teoricas/PDFs/Software-DesarrolloDeSoftware.pdf",
+    "Teoricas/PDFs/Objetos-1.pdf",
+    "Teoricas/PDFs/Introduccion.pdf",
+    "Teoricas/PDFs/HistoriaDeSmalltalk.pdf",
+    "Teoricas/PDFs/Excepciones.pdf",
+    "Teoricas/PDFs/TDD.pdf",
+    "Teoricas/PDFs",
+    "Teoricas/New folder",
+    "Blue Book Capítulos 6, 7, 8.md",
     "_templates/Summary Paper.md",
     "Patrones/Pattern - Adapter.md",
     "Patrones/Pattern - Abstract Factory.md",
@@ -225,16 +217,7 @@
     "_templates/Pattern template.md",
     "_templates",
     "Object Recursion.md",
-    "Modern Software Engineering - Cap 1, Cap 2 Cap 3.md",
-    "Design Patterns - Elements of Reusable Object-Oriented Software.md",
-    "PDFs/Brooks_1986_-_No_Silver_Bullet.pdf",
-    "PDFs/failFast.pdf",
-    "Teoricas",
-    "Patrones",
-    "PDFs/Programming as Theory Building.pdf",
     "images/StatePattern.png",
-    "Heurísticas",
-    "PDFs/Polymorphic Hierarchy.pdf",
     "images/relation mind-computer.png",
     "images/Carelmans Coffeepot for Masochists.png",
     "Untitled.canvas"
