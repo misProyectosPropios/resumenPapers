@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Heurísticas/Variadas.md",
+                "file": "Patrones/Papers Bulletpoints.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Variadas"
+              "title": "Papers Bulletpoints"
             }
           }
         ]
@@ -179,9 +179,10 @@
   },
   "active": "be818a5029739101",
   "lastOpenFiles": [
-    "Heurísticas/Sacar if.md",
-    "Heurísticas/Variadas.md",
     "Definiciones/Polimorfismo.md",
+    "Patrones/Papers Bulletpoints.md",
+    "Heurísticas/Variadas.md",
+    "Heurísticas/Sacar if.md",
     "Heurísticas/Sacar código repetido.md",
     "Teoricas/Metamodelo.md",
     "Teoricas/PDFs/Software-DesarrolloDeSoftware.pdf",
@@ -218,7 +219,6 @@
     "Patrones/Pattern - Decorator.md",
     "Patrones/Pattern - Composite.md",
     "Patrones/Pattern - Builder.md",
-    "Patrones/Pattern - Bridge.md",
     "images/strategyPattern.png",
     "images/visitorPattern.png",
     "images/StatePattern.png",
