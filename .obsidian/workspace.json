@@ -11,10 +11,14 @@
             "id": "be818a5029739101",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Heurísticas/Variadas.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Variadas"
             }
           }
         ]
@@ -173,8 +177,13 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "65ad849353b9437e",
+  "active": "be818a5029739101",
   "lastOpenFiles": [
+    "Heurísticas/Sacar if.md",
+    "Heurísticas/Variadas.md",
+    "Definiciones/Polimorfismo.md",
+    "Heurísticas/Sacar código repetido.md",
+    "Teoricas/Metamodelo.md",
     "Teoricas/PDFs/Software-DesarrolloDeSoftware.pdf",
     "Teoricas/PDFs/Objetos-1.pdf",
     "Teoricas/PDFs/Introduccion.pdf",
@@ -210,13 +219,8 @@
     "Patrones/Pattern - Composite.md",
     "Patrones/Pattern - Builder.md",
     "Patrones/Pattern - Bridge.md",
-    "Patrones/Pattern - Behavioral.md",
-    "Patrones/Pattern - Strategy.md",
     "images/strategyPattern.png",
     "images/visitorPattern.png",
-    "_templates/Pattern template.md",
-    "_templates",
-    "Object Recursion.md",
     "images/StatePattern.png",
     "images/relation mind-computer.png",
     "images/Carelmans Coffeepot for Masochists.png",
