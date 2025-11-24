@@ -34,20 +34,6 @@
             }
           },
           {
-            "id": "db48cd26c292c386",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Teoricas/Metamodelo.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Metamodelo"
-            }
-          },
-          {
             "id": "f8b3d81953569c33",
             "type": "leaf",
             "state": {
@@ -57,6 +43,34 @@
               },
               "icon": "lucide-image",
               "title": "metamodelo"
+            }
+          },
+          {
+            "id": "97127e8059336c3e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Teoricas/Excepciones.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Excepciones"
+            }
+          },
+          {
+            "id": "ffcb9766a2936904",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Definiciones/Acoplamiento.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Acoplamiento"
             }
           },
           {
@@ -74,7 +88,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -230,25 +244,30 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "db48cd26c292c386",
+  "active": "ffcb9766a2936904",
   "lastOpenFiles": [
+    "Patrones/Pattern - Observer.md",
+    "Definiciones/Acoplamiento.md",
+    "Patrones/Papers Bulletpoints.md",
+    "Teoricas/Excepciones.md",
+    "Teoricas/PDFs/Excepciones.pdf",
+    "Heurísticas/Variadas.md",
+    "images/arbolRaiz.png",
+    "images/metamodelo.png",
+    "images/arbolHojas.png",
+    "Teoricas/Metamodelo.md",
     "Teoricas/Esencia.md",
     "images/facadePattern.png",
     "Patrones/Pattern - Facade.md",
-    "images/metamodelo.png",
-    "Teoricas/Metamodelo.md",
-    "Patrones/Papers Bulletpoints.md",
     "Object Recursion.md",
     "Definiciones/Polimorfismo.md",
     "Patrones/Pattern - Composite.md",
-    "Heurísticas/Variadas.md",
     "Heurísticas/Sacar if.md",
     "Heurísticas/Sacar código repetido.md",
     "Teoricas/PDFs/Software-DesarrolloDeSoftware.pdf",
     "Teoricas/PDFs/Objetos-1.pdf",
     "Teoricas/PDFs/Introduccion.pdf",
     "Teoricas/PDFs/HistoriaDeSmalltalk.pdf",
-    "Teoricas/PDFs/Excepciones.pdf",
     "Teoricas/PDFs/TDD.pdf",
     "Teoricas/PDFs",
     "Teoricas/New folder",
@@ -271,13 +290,8 @@
     "Fail Fast.md",
     "The Design of Everyday Things.md",
     "Method Object.md",
-    "Patrones/Template Method.md",
-    "Patrones/Pattern - Visitor.md",
-    "Patrones/Pattern - State.md",
     "images/strategyPattern.png",
     "images/visitorPattern.png",
-    "images/StatePattern.png",
-    "images/relation mind-computer.png",
     "Untitled.canvas"
   ]
 }
