@@ -4,77 +4,53 @@
     "type": "split",
     "children": [
       {
-        "id": "305e412c2e4bde0d",
+        "id": "5c6cde91a185a739",
         "type": "tabs",
         "children": [
           {
-            "id": "be818a5029739101",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "images/facadePattern.png"
-              },
-              "icon": "lucide-image",
-              "title": "facadePattern"
-            }
-          },
-          {
-            "id": "73bb781beec89566",
+            "id": "0efe20009ab45e09",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Teoricas/Esencia.md",
-                "mode": "source",
+                "file": "Patrones/Papers Bulletpoints.md",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Esencia"
+              "title": "Papers Bulletpoints"
             }
           },
           {
-            "id": "f8b3d81953569c33",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "images/metamodelo.png"
-              },
-              "icon": "lucide-image",
-              "title": "metamodelo"
-            }
-          },
-          {
-            "id": "97127e8059336c3e",
+            "id": "dbdd9bdd94749bf6",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Teoricas/Excepciones.md",
+                "file": "Otro/Aconcagua y Chalten.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Excepciones"
+              "title": "Aconcagua y Chalten"
             }
           },
           {
-            "id": "ffcb9766a2936904",
+            "id": "933a7498cb7503f4",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Definiciones/Acoplamiento.md",
+                "file": "Teoricas/Method Lookup.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Acoplamiento"
+              "title": "Method Lookup"
             }
           },
           {
-            "id": "114b8ea79fa16172",
+            "id": "713582037a6e7f44",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -86,9 +62,79 @@
               "icon": "lucide-file",
               "title": "Pattern - Facade"
             }
+          },
+          {
+            "id": "33015bc3c349d941",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Patrones/Pattern - Proxy.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Pattern - Proxy"
+            }
+          },
+          {
+            "id": "60d8efbf8dedc5cc",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Patrones/Pattern - Decorator.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Pattern - Decorator"
+            }
+          },
+          {
+            "id": "a3eb6cf264b84b76",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Patrones/Pattern - State.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Pattern - State"
+            }
+          },
+          {
+            "id": "be18018fc00a36c6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Patrones/Pattern - Strategy.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Pattern - Strategy"
+            }
+          },
+          {
+            "id": "c2badfd216a98bb3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Patrones/Pattern - Decorator.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Pattern - Decorator"
+            }
           }
         ],
-        "currentTab": 4
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -244,21 +290,30 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "ffcb9766a2936904",
+  "active": "dbdd9bdd94749bf6",
   "lastOpenFiles": [
-    "Patrones/Pattern - Observer.md",
-    "Definiciones/Acoplamiento.md",
     "Patrones/Papers Bulletpoints.md",
+    "Teoricas/Method Lookup.md",
+    "Otro/Aconcagua y Chalten.md",
+    "Otro",
+    "Patrones/Pattern - Decorator.md",
+    "Patrones/Pattern - Strategy.md",
+    "Patrones/Pattern - State.md",
+    "Patrones/Pattern - Proxy.md",
+    "Patrones/Pattern - Facade.md",
+    "images/facadePattern.png",
+    "Definiciones/Acoplamiento.md",
     "Teoricas/Excepciones.md",
+    "images/metamodelo.png",
+    "Patrones/Pattern - Visitor.md",
+    "Method dispatch generalized.md",
+    "Teoricas/Esencia.md",
+    "Patrones/Pattern - Observer.md",
     "Teoricas/PDFs/Excepciones.pdf",
     "Heurísticas/Variadas.md",
     "images/arbolRaiz.png",
-    "images/metamodelo.png",
     "images/arbolHojas.png",
     "Teoricas/Metamodelo.md",
-    "Teoricas/Esencia.md",
-    "images/facadePattern.png",
-    "Patrones/Pattern - Facade.md",
     "Object Recursion.md",
     "Definiciones/Polimorfismo.md",
     "Patrones/Pattern - Composite.md",
@@ -281,15 +336,6 @@
     "images/compositePattern.png",
     "images/adapterPattern.png",
     "Definiciones/Waterfall.md",
-    "Definiciones",
-    "Self - The Power Of Simplicity.md",
-    "Respuesta sobre Computer Science de Alan Kay en Quora.md",
-    "Programming As Theory Building.md",
-    "Polymorphic Hierarchies.md",
-    "Introducing the Smalltalk-80 System.md",
-    "Fail Fast.md",
-    "The Design of Everyday Things.md",
-    "Method Object.md",
     "images/strategyPattern.png",
     "images/visitorPattern.png",
     "Untitled.canvas"

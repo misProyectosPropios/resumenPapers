@@ -33,5 +33,9 @@ We could think of a facade as an adapter for the subsystem, but it's more than a
 + It promotes weak coupling between the subsystem and its clients.
 + It doesn't prevent applications from using subsystem classes if they need to
 	+ This is the difference between an adapter an a facade
+
+## Known Uses
+
+
 ## How to use it
 Create a class facade which interacts with the subsystems classes and use it to call the model instead of actually calling all the facade
