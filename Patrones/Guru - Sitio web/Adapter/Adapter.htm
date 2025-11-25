@@ -1,0 +1,3242 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"><head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/website#">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>Adapter</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#95f3fc">
+
+            <style>
+        .buy-widget-excl-local-taxes {
+            display: none;
+        }
+    </style>
+    
+    <link rel="preload" href="https://refactoring.guru/fonts/PTSans/ptsans-regular_en.woff2?1" as="font" type="font/woff2" crossorigin="">
+    <link rel="preload" href="https://refactoring.guru/fonts/PTSans/ptsans-bold_en.woff2?1" as="font" type="font/woff2" crossorigin="">
+        <link rel="preload" href="https://refactoring.guru/fonts/fontello/fontawesome.woff2?15843843" as="font" type="font/woff2" crossorigin="">
+    <link rel="preload" href="https://refactoring.guru/fonts/FiraCode/woff2/FiraCode-Regular_latin.woff2" as="font" type="font/woff2" crossorigin="">
+        <link rel="preconnect dns-prefetch" href="https://cdn.paddle.com/">
+    <link rel="preconnect dns-prefetch" href="https://www.googletagmanager.com/">
+
+    <link rel="alternate" href="https://refactoring.guru/design-patterns/adapter" hreflang="x-default">
+    <link rel="alternate" href="https://refactoring.guru/es/design-patterns/adapter" hreflang="es">
+    <link rel="alternate" href="https://refactoring.guru/fr/design-patterns/adapter" hreflang="fr">
+    <link rel="alternate" href="https://refactoring.guru/ja/design-patterns/adapter" hreflang="ja">
+    <link rel="alternate" href="https://refactoring.guru/ko/design-patterns/adapter" hreflang="ko">
+    <link rel="alternate" href="https://refactoring.guru/pl/design-patterns/adapter" hreflang="pl">
+    <link rel="alternate" href="https://refactoring.guru/pt-br/design-patterns/adapter" hreflang="pt-br">
+    <link rel="alternate" href="https://refactoring.guru/ru/design-patterns/adapter" hreflang="ru">
+    <link rel="alternate" href="https://refactoring.guru/uk/design-patterns/adapter" hreflang="uk">
+    <link rel="alternate" href="https://refactoringguru.cn/design-patterns/adapter" hreflang="zh">
+
+    <meta name="description" content="Adapter is a structural design pattern that allows objects with incompatible interfaces to collaborate.">
+
+    <link rel="canonical" href="https://refactoring.guru/design-patterns/adapter">
+
+    <link rel="icon" type="image/x-icon" href="https://refactoring.guru/favicon.png">
+
+        <meta property="fb:app_id" content="666819623386327">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="https://refactoring.guru/images/refactoring/social/facebook-share-preview.png?id=dbf9e98269595be86eb668f365be6868">
+    
+                    <link rel="stylesheet" href="Adapter_files/public-packed.min.css">
+        <style type="text/css">
+                    @font-face{font-family:"PT Sans";font-style:normal;font-weight:400;font-display:swap;src:local("PT Sans"),local("PTSans-Regular"),url(/fonts/PTSans/ptsans-regular_cyrillic-ext.woff2?1) format("woff2");unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F}@font-face{font-family:"PT Sans";font-style:normal;font-weight:400;font-display:swap;src:local("PT Sans"),local("PTSans-Regular"),url(/fonts/PTSans/ptsans-regular_cyrillic.woff2?1) format("woff2");unicode-range:U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}@font-face{font-family:"PT Sans";font-style:normal;font-weight:400;font-display:swap;src:local("PT Sans"),local("PTSans-Regular"),url(/fonts/PTSans/ptsans-regular_latin-ext.woff2?1) format("woff2");unicode-range:U+0100-024F,U+0259,U+1E00-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:"PT Sans";font-style:normal;font-weight:400;font-display:swap;src:local("PT Sans"),local("PTSans-Regular"),url(/fonts/PTSans/ptsans-regular_latin.woff2?1) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:"PT Sans";font-style:normal;font-weight:400;font-display:swap;src:local("PT Sans"),local("PTSans-Regular"),url(/fonts/PTSans/ptsans-regular_en.woff2?1) format("woff2");unicode-range:U+0-FF,U+131,U+142,U+152,U+153,U+2BB,U+2BC,U+2C6,U+2DA,U+2DC,U+420,U+423,U+430,U+438-43A,U+43D,U+440,U+441,U+443,U+44C,U+457,U+2000-206F,U+2074,U+20AA-20AC,U+20B4,U+20B9,U+20BA,U+20BD,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:"PT Sans";font-style:normal;font-weight:700;font-display:swap;src:local("PT Sans Bold"),local("PTSans-Bold"),url(/fonts/PTSans/ptsans-bold_cyrillic-ext.woff2?1) format("woff2");unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F}@font-face{font-family:"PT Sans";font-style:normal;font-weight:700;font-display:swap;src:local("PT Sans Bold"),local("PTSans-Bold"),url(/fonts/PTSans/ptsans-bold_cyrillic.woff2?1) format("woff2");unicode-range:U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}@font-face{font-family:"PT Sans";font-style:normal;font-weight:700;font-display:swap;src:local("PT Sans Bold"),local("PTSans-Bold"),url(/fonts/PTSans/ptsans-bold_latin-ext.woff2?1) format("woff2");unicode-range:U+0100-024F,U+0259,U+1E00-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:"PT Sans";font-style:normal;font-weight:700;font-display:swap;src:local("PT Sans Bold"),local("PTSans-Bold"),url(/fonts/PTSans/ptsans-bold_latin.woff2?1) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:"PT Sans";font-style:normal;font-weight:700;font-display:swap;src:local("PT Sans Bold"),local("PTSans-Bold"),url(/fonts/PTSans/ptsans-bold_en.woff2?1) format("woff2");unicode-range:U+0-FF,U+131,U+142,U+152,U+153,U+2BB,U+2BC,U+2C6,U+2DA,U+2DC,U+420,U+423,U+430,U+438-43A,U+43D,U+440,U+441,U+443,U+44C,U+457,U+2000-206F,U+2074,U+20AA-20AC,U+20B4,U+20B9,U+20BA,U+20BD,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+            </style>
+
+    
+            <script defer="defer" src="Adapter_files/public.min.js"></script>
+        <script defer="defer" src="Adapter_files/checkout.min.js"></script>
+            <script defer="defer" src="Adapter_files/paddle.js"></script>
+    <script async="" src="Adapter_files/js"></script>
+
+    <script type="application/ld+json">
+        {"@context":"http://schema.org","@graph":[{"@type":"Person","@id":"https://refactoring.guru/#founder","name":"Alexander Shvets"},{"@type":"Organization","@id":"https://refactoring.guru/#organization","name":"Refactoring.Guru","description":"Refactoring.Guru makes it easy for you to discover everything you need to know about refactoring, design patterns, SOLID principles, and other smart programming topics.","image":{"@type":"ImageObject","@id":"https://refactoring.guru/#organizationlogo","url":"https://refactoring.guru/images/content-public/logos/logo-plain.png","caption":"Refactoring.Guru"},"logo":{"@id":"https://refactoring.guru/#organizationlogo"},"founder":{"@id":"https://refactoring.guru/#founder"},"sameAs":["https://www.facebook.com/refactoring.guru","https://twitter.com/RefactoringGuru","https://github.com/RefactoringGuru"]},{"@type":"WebSite","@id":"https://refactoring.guru/#website","url":"https://refactoring.guru/","name":"Refactoring.Guru","description":"Refactoring.Guru makes it easy for you to discover everything you need to know about refactoring, design patterns, SOLID principles, and other smart programming topics.","author":{"@id":"https://refactoring.guru/#founder"},"publisher":{"@id":"https://refactoring.guru/#organization"},"copyrightYear":2014},{"@type":"WebPage","@id":"https://refactoring.guru/design-patterns/adapter#webpage","url":"https://refactoring.guru/design-patterns/adapter","inLanguage":"en","name":"Adapter","description":"Adapter is a structural design pattern that allows objects with incompatible interfaces to collaborate.","isPartOf":{"@id":"https://refactoring.guru#website"},"breadcrumb":{"@id":"https://refactoring.guru/design-patterns/adapter#breadcrumb"},"primaryImageOfPage":{"@id":"https://refactoring.guru/design-patterns/adapter#primaryimage"},"image":{"@type":"ImageObject","@id":"https://refactoring.guru/design-patterns/adapter#primaryimage","url":"https://refactoring.guru/images/patterns/content/adapter/adapter-en-3x.png","width":1920,"height":1200}},{"@type":"Article","@id":"https://refactoring.guru/design-patterns/adapter#article","isPartOf":{"@id":"https://refactoring.guru/design-patterns/adapter#webpage"},"mainEntityOfPage":{"@id":"https://refactoring.guru/design-patterns/adapter#webpage"},"author":{"@id":"https://refactoring.guru#founder"},"publisher":{"@id":"https://refactoring.guru#organization"},"headline":"Adapter","datePublished":"2024-01-01","dateModified":"2025-01-01","articleSection":"Design Patterns","image":{"@id":"https://refactoring.guru/design-patterns/adapter#primaryimage"}},{"@type":"BreadcrumbList","@id":"https://refactoring.guru/design-patterns/adapter#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://refactoring.guru"},{"@type":"ListItem","position":2,"name":"Design Patterns","item":"https://refactoring.guru/design-patterns"},{"@type":"ListItem","position":3,"name":"Structural Patterns","item":"https://refactoring.guru/design-patterns/structural-patterns"}]}]}
+    </script>
+
+    <script>
+function extend(){var extended={};var deep=false;var i=0;var length=arguments["length"];if(Object["prototype"]["toString"]["call"](arguments[0])=== '[object Boolean]'){deep= arguments[0];i++};var merge=function(obj){for(var prop in obj){if(Object["prototype"]["hasOwnProperty"]["call"](obj,prop)){if(deep&& Object["prototype"]["toString"]["call"](obj[prop])=== '[object Object]'){extended[prop]= extend(true,extended[prop],obj[prop])}else {extended[prop]= obj[prop]}}}};for(;i< length;i++){var obj=arguments[i];merge(obj)};return extended}
+function defer(method) {if (window.jQuery) {method();} else {setTimeout(function() { defer(method) }, 50);}}
+</script>
+<script>
++function(sd){sd = (typeof sd === "string") ? JSON.parse(atob(sd)) : sd;for(var property in sd){if(window[property]!== null&&  typeof window[property]=== 'object'){window[property]= extend(true,window[property],sd[property])}else {window[property]= sd[property]}}}("eyJsb2NhbGUiOiJlbiIsImxvY2FsZV9wcmVmaXgiOiIiLCJsb2NhbGl6ZWRfdXJsX3ByZWZpeCI6Imh0dHBzOlwvXC9yZWZhY3RvcmluZy5ndXJ1XC8iLCJ1cmxfcHJlZml4IjoiaHR0cHM6XC9cL3JlZmFjdG9yaW5nLmd1cnVcLyIsImxvY2FsaXplZF91cmxfcHJlZml4X20iOiJodHRwczpcL1wvcmVmYWN0b3JpbmcuZ3VydVwvIiwidXJsX3ByZWZpeF9tIjoiaHR0cHM6XC9cL3JlZmFjdG9yaW5nLmd1cnVcLyIsInVzZXJfZWNob19hbGlhcyI6InJlZmFjdG9yaW5nIiwidXNlcl9lY2hvX2hvc3QiOiJmZWVkYmFjay5yZWZhY3RvcmluZy5ndXJ1IiwidXNlcl9lY2hvX3ByaXZhdGVfZm9ydW0iOiIyIiwidXNlcl9lY2hvX2xvY2FsZSI6ImVuIiwidXNlcl9lY2hvX3B1YmxpY19mb3J1bSI6IjMiLCJ1c2VyX2VjaG9fcHVibGljX2ZvcnVtX3VybCI6Imh0dHBzOlwvXC9mZWVkYmFjay5yZWZhY3RvcmluZy5ndXJ1XC8iLCJ1c2VyX2VjaG9fc3NvX3Rva2VuIjoiIn0=");
+</script>
+
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+            gtag('set', 'linker', {'domains': ["refactoring.guru,refactoringguru.cn"]});
+        gtag('config', 'G-SR8Y3GYQYC', {
+        // Disable default page view, because we're going to report them on our own.
+        // This is done to report traffic on localized domains as part of the main website traffic
+        // See the Chinese overrides below.
+        send_page_view: false,
+    });
+</script>
+
+<script>
+    (() => {
+        // On first page view after returning from social network, we need to send the social login event.
+        (function detectSocialLogin() {
+            let getCookie = function (name) {
+                var nameEQ = name + "=";
+                var ca = document.cookie.split(';');
+                for (var i = 0; i < ca.length; i++) {
+                    var c = ca[i];
+                    while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+                    if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+                }
+                return null;
+            };
+            window.social_login_provider = window.social_login_provider || getCookie('social_login_provider');
+            if (window.social_login_provider) {
+                gtag('set', {referrer: null});
+                gtag('event', 'login', {"method": window.social_login_provider});
+                // Delete cookie.
+                document.cookie = 'social_login_provider=; Path=/; Max-Age=-99999999;';
+            }
+        })();
+
+        function trackPageView(location, title) {
+            location = location || document.location.href;
+            title = title || document.title;
+
+            // This is show on https://refactoringguru.cn/ and alike.
+            if (typeof window.analytics_path_prefix === 'string') {
+                if (/^(https?:\/\/[^\/]+?)\/$/.test(location)) {
+                    location = location.replace(/(https?:\/\/[^\/]+?)\//, '$1' + window.analytics_path_prefix);
+                } else {
+                    location = location.replace(/(https?:\/\/[^\/]+?)\//, '$1' + window.analytics_path_prefix + '/');
+                }
+                gtag('set', {
+                    'page_location': location
+                });
+            }
+
+            // This is show on https://refactoring.guru/zh/login and alike.
+            if (typeof window.analytics_location_prefix === 'string') {
+                location = location.replace(/(https?:\/\/[^\/]+?)\//, window.analytics_location_prefix);
+                gtag('set', {
+                    'page_location': location
+                });
+            }
+
+            gtag('event', 'page_view', {
+                page_location: location,
+                page_title: title,
+                locale: window.locale ?? 'en'
+            });
+        }
+
+        if (window.loadContent) {
+            window.onPageLoad = window.onPageLoad || [];
+            window.onPageLoad.push({
+                func: function (context) {
+                    trackPageView(window.location.origin + context.canonicalPath, context.title);
+                },
+                afterAll: true,
+            });
+        }
+        else {
+            trackPageView();
+        }
+    })();
+</script>
+
+
+</head>
+<body class="locale-en announcement announcement-body-autumn adapter transitions country-ARG" data-body_class="adapter" style="margin-bottom: 315px;">
+
+<div class="body-holder">
+
+            <div class="announcement-block announcement-block-autumn prom ga-triggered" data-id="DIDP-announcement" data-creative-id="en" data-position="top">
+            <a href="https://refactoring.guru/store">
+                <img src="Adapter_files/read.svg" loading="lazy" style="width: 32px; height:32px;vertical-align: middle;">
+                <img src="Adapter_files/tea-cup.svg" loading="lazy" style="width: 32px; height:32px;vertical-align: middle;">
+                <span class="announcement-link-text">Autumn SALE</span>
+                <img src="Adapter_files/mulled-wine.svg" loading="lazy" style="width: 32px; height:32px;vertical-align: middle;">
+                <img src="Adapter_files/maple-leaf.svg" loading="lazy" style="width: 32px; height:32px;vertical-align: middle;">
+            </a>
+        </div>
+        
+    <div class="cart-placeholder">
+    <div class="cart-block-container" style="display:none">
+        <div class="cart-block btn-group">
+            <a href="#checkout" class="btn cart open-checkout checkout-listening">
+                <span class="cart-text"></span>&nbsp;<strong class="cart-total font-money"></strong>
+            </a><a href="#checkout" class="btn btn-secondary checkout open-checkout checkout-listening"><i class="fa fa-shopping-cart" aria-hidden="true"></i> <span class="btn-text-span d-none d-sm-inline-block d-lg-none d-hg-inline-block"></span></a>
+        </div>
+    </div>
+</div>
+    <main role="main" class="main-content top-content center-content " data-page_class="">
+        <div class="main-content-container center-content-container">
+                        <div class="pattern page text">
+<article>
+    <div class="breadcrumb">
+                                    <a class="home" href="https://refactoring.guru/"><i class="fa fa-home" aria-hidden="true"></i></a>
+                                                / <a class="type" href="https://refactoring.guru/design-patterns">Design Patterns</a>
+                                                / <a class="type" href="https://refactoring.guru/design-patterns/structural-patterns">Structural Patterns</a>
+                        </div>
+    <h1 class="title">Adapter</h1>
+
+    <script type="text/javascript">
+        // Shorten examples titles for users.
+        var h1 = document.getElementsByTagName("H1")[0];
+        if (h1.offsetHeight > 160) {
+            h1.className += ' smaller';
+        }
+
+        // Small beautification for pattern examples.
+        var title = h1.innerHTML;
+        title = title.replace(/^(Java|C\+\+|C#|PHP|Python|Ruby|Delphi): (.*)$/, '<strong>$1:</strong> $2');
+        h1.innerHTML = title;
+    </script>
+
+            <div class="aka">
+            Also known as: <span style="display:inline-block">Wrapper</span>
+        </div>
+    
+    
+
+    <div class="section intent">
+<h2 id="intent"><i class="fa fa-flip-horizontal fa-comment-alt-dots" aria-hidden="true"></i> Intent</h2>
+<p><strong>Adapter</strong> is a structural design pattern that allows objects with incompatible interfaces to&nbsp;collaborate.</p>
+<figure class="image"><img src="Adapter_files/adapter-en.png" alt="Adapter design pattern" srcset="Adapter_files/adapter-en.png 640w, Adapter_files/adapter-en-1.5x.png 960w, Adapter_files/adapter-en-2x.png 1280w" sizes="(max-width: 720px) 100vw, 640px" width="640" style="aspect-ratio: 1.6;" fetchpriority="high"></figure>
+</div>
+<div class="section problem">
+<h2 id="problem"><i class="fa fa-frown" aria-hidden="true"></i> Problem</h2>
+<p>Imagine that you’re creating a stock market monitoring app. The app 
+downloads the stock data from multiple sources in XML format and then 
+displays nice-looking charts and diagrams for the user.</p>
+<p>At some point, you decide to improve the app by integrating a smart 
+3rd-party analytics library. But there’s a catch: the analytics library 
+only works with data in JSON format.</p>
+<figure class="image"><img src="Adapter_files/problem-en.png" alt="The structure of the app before integration with the analytics library" srcset="Adapter_files/problem-en.png 530w, Adapter_files/problem-en-1.5x.png 795w, Adapter_files/problem-en-2x.png 1060w" sizes="(max-width: 720px) 100vw, 530px" width="530" style="aspect-ratio: 2.41;" loading="lazy"><figcaption>
+<p>You can’t use the analytics library “as is” because it expects the data in a format that’s incompatible with your&nbsp;app.</p>
+</figcaption></figure>
+<p>You could change the library to work with XML. However, this might 
+break some existing code that relies on the library. And worse, you 
+might not have access to the library’s source code in the first place, 
+making this approach impossible.</p>
+</div>
+<div class="section solution">
+<h2 id="solution"><i class="fa fa-smile-beam" aria-hidden="true"></i> Solution</h2>
+<p>You can create an <em>adapter</em>. This is a special object that converts the interface of one object so that another object can understand it.</p>
+<p>An adapter wraps one of the objects to hide the complexity of 
+conversion happening behind the scenes. The wrapped object isn’t even 
+aware of the adapter. For example, you can wrap an object that operates 
+in meters and kilometers with an adapter that converts all of the data 
+to imperial units such as feet and miles.</p>
+<p>Adapters can not only convert data into various formats but can also 
+help objects with different interfaces collaborate. Here’s how it works:</p>
+<ol>
+<li>The adapter gets an interface, compatible with one of the existing objects.</li>
+<li>Using this interface, the existing object can safely call the adapter’s methods.</li>
+<li>Upon receiving a call, the adapter passes the request to the second 
+object, but in a format and order that the second object expects.</li>
+</ol>
+<p>Sometimes it’s even possible to create a two-way adapter that can convert the calls in both directions.</p>
+<figure class="image"><img src="Adapter_files/solution-en.png" alt="Adapter's solution" srcset="Adapter_files/solution-en.png 530w, Adapter_files/solution-en-1.5x.png 795w, Adapter_files/solution-en-2x.png 1060w" sizes="(max-width: 720px) 100vw, 530px" width="530" style="aspect-ratio: 1.51;" loading="lazy"></figure>
+<p>Let’s get back to our stock market app. To solve the dilemma of 
+incompatible formats, you can create XML-to-JSON adapters for every 
+class of the analytics library that your code works with directly. Then 
+you adjust your code to communicate with the library only via these 
+adapters. When an adapter receives a call, it translates the incoming 
+XML data into a JSON structure and passes the call to the appropriate 
+methods of a wrapped analytics object.</p>
+</div>
+<div class="section analogy">
+<h2 id="analogy"><i class="fa fa-car-side" aria-hidden="true"></i> Real-World Analogy</h2>
+<figure class="image"><img src="Adapter_files/adapter-comic-1-en.png" alt="The Adapter pattern example" srcset="Adapter_files/adapter-comic-1-en.png 533w, Adapter_files/adapter-comic-1-en-1.5x.png 800w, Adapter_files/adapter-comic-1-en-2x.png 1067w" sizes="(max-width: 720px) 100vw, 533px" width="533" style="aspect-ratio: 1.78;" loading="lazy"><figcaption>
+<p>A suitcase before and after a trip&nbsp;abroad.</p>
+</figcaption></figure>
+<p>When you travel from the US to Europe for the first time, you may get
+ a surprise when trying to charge your laptop. The power plug and 
+sockets standards are different in different countries. That’s why your 
+US plug won’t fit a German socket. The problem can be solved by using a 
+power plug adapter that has the American-style socket and the 
+European-style plug.</p>
+</div>
+<div class="section structure-container">
+<h2 id="structure"><i class="fa fa-sitemap" aria-hidden="true"></i> Structure</h2>
+<div class="structure">
+<h4>Object adapter</h4>
+<p>This implementation uses the object composition principle: the 
+adapter implements the interface of one object and wraps the other one. 
+It can be implemented in all popular programming languages.</p>
+<div class="adapter-object">
+<div class="struct-image1 struct-image">
+<figure class="image"><img class="structure-img-non-indexed d-none d-xl-block" src="Adapter_files/structure-object-adapter.png" alt="Structure of the Adapter design pattern (the object adapter)" srcset="Adapter_files/structure-object-adapter.png 580w, Adapter_files/structure-object-adapter-1.5x.png 870w, Adapter_files/structure-object-adapter-2x.png 1160w" sizes="(max-width: 720px) 100vw, 580px" width="580" style="aspect-ratio: 1.81;" loading="lazy"><img class="structure-img-indexed d-xl-none" src="Adapter_files/structure-object-adapter-indexed.png" alt="Structure of the Adapter design pattern (the object adapter)" srcset="Adapter_files/structure-object-adapter-indexed.png 600w, Adapter_files/structure-object-adapter-indexed-1.5x.png 900w, Adapter_files/structure-object-adapter-indexed-2x.png 1200w" sizes="(max-width: 720px) 100vw, 600px" width="600" style="aspect-ratio: 1.76;" loading="lazy"></figure>
+</div>
+</div>
+<ol><li class="struct-li1">
+<p>The <strong>Client</strong> is a class that contains the existing business logic of the program.</p>
+</li>
+<li class="struct-li2">
+<p>The <strong>Client Interface</strong> describes a protocol that other classes must follow to be able to collaborate with the client code.</p>
+</li>
+<li class="struct-li3">
+<p>The <strong>Service</strong> is some useful class (usually 3rd-party 
+or legacy). The client can’t use this class directly because it has an 
+incompatible interface.</p>
+</li>
+<li class="struct-li4">
+<p>The <strong>Adapter</strong> is a class that’s able to work with both
+ the client and the service: it implements the client interface, while 
+wrapping the service object. The adapter receives calls from the client 
+via the client interface and translates them into calls to the wrapped 
+service object in a format it can understand.</p>
+</li>
+<li class="struct-li5">
+<p>The client code doesn’t get coupled to the concrete adapter class as 
+long as it works with the adapter via the client interface. Thanks to 
+this, you can introduce new types of adapters into the program without 
+breaking the existing client code. This can be useful when the interface
+ of the service class gets changed or replaced: you can just create a 
+new adapter class without changing the client code.</p>
+</li></ol>
+<h4>Class adapter</h4>
+<p>This implementation uses inheritance: the adapter inherits interfaces
+ from both objects at the same time. Note that this approach can only be
+ implemented in programming languages that support multiple inheritance,
+ such as C++.</p>
+<div class="adapter-class">
+<div class="struct-image2 struct-image">
+<figure class="image"><img class="structure-img-non-indexed d-none d-xl-block" src="Adapter_files/structure-class-adapter.png" alt="Adapter design pattern (class adapter)" srcset="Adapter_files/structure-class-adapter.png 550w, Adapter_files/structure-class-adapter-1.5x.png 825w, Adapter_files/structure-class-adapter-2x.png 1100w" sizes="(max-width: 720px) 100vw, 550px" width="550" style="aspect-ratio: 1.72;" loading="lazy"><img class="structure-img-indexed d-xl-none" src="Adapter_files/structure-class-adapter-indexed.png" alt="Adapter design pattern (class adapter)" srcset="Adapter_files/structure-class-adapter-indexed.png 550w, Adapter_files/structure-class-adapter-indexed-1.5x.png 825w, Adapter_files/structure-class-adapter-indexed-2x.png 1100w" sizes="(max-width: 720px) 100vw, 550px" width="550" style="aspect-ratio: 1.72;" loading="lazy"></figure>
+</div>
+</div>
+<ol><li class="struct-li6">
+<p>The <strong>Class Adapter</strong> doesn’t need to wrap any objects 
+because it inherits behaviors from both the client and the service. The 
+adaptation happens within the overridden methods. The resulting adapter 
+can be used in place of an existing client class.</p>
+</li></ol>
+<style structure="" type="text/css">
+@media (min-width: 1200px) {
+.structure {
+margin: 0;
+width: auto;
+height: 1240px;
+}
+
+.adapter-object {
+height: 590px;
+}
+
+.adapter-class {
+height: 300px;
+}
+
+.struct-image1 {
+left: 160px;
+top: 270px;
+}
+
+.struct-li1 {
+left: 0px;
+top: 230px;
+width: 160px;
+}
+
+.struct-li2 {
+left: 230px;
+top: 150px;
+width: 230px;
+}
+
+.struct-li3 {
+left: 510px;
+top: 270px;
+width: 220px;
+}
+
+.struct-li4 {
+left: 260px;
+top: 600px;
+width: 420px;
+}
+
+.struct-li5 {
+left: 0px;
+top: 390px;
+width: 230px;
+}
+
+.struct-image2 {
+left: 100px;
+top: 920px;
+}
+
+.struct-li6 {
+left: 0px;
+top: 1020px;
+width: 230px;
+}
+
+}
+
+</style>
+</div></div>
+<div class="section pseudocode">
+<h2 id="pseudocode"><i class="fa fa-hashtag" aria-hidden="true"></i> Pseudocode</h2>
+<p>This example of the <strong>Adapter</strong> pattern is based on the classic conflict between square pegs and round holes.</p>
+<figure class="image"><img src="Adapter_files/example.png" alt="Structure of the Adapter pattern example" srcset="Adapter_files/example.png 640w, Adapter_files/example-1.5x.png 960w, Adapter_files/example-2x.png 1280w" sizes="(max-width: 720px) 100vw, 640px" width="640" style="aspect-ratio: 1.68;" loading="lazy"><figcaption>
+<p>Adapting square pegs to round&nbsp;holes.</p>
+</figcaption></figure>
+<p>The Adapter pretends to be a round peg, with a radius equal to a half
+ of the square’s diameter (in other words, the radius of the smallest 
+circle that can accommodate the square peg).</p>
+<figure class="code">
+<pre class="code cm-s-default CodeMirror" lang="pseudocode"><span class="cm-doc">// Say you have two classes with compatible interfaces:</span>
+<span class="cm-doc">// RoundHole and RoundPeg.</span>
+<span class="cm-keyword">class</span> <span class="cm-def1">RoundHole</span> <span class="cm-keyword">is</span>
+    <span class="cm-keyword">constructor</span> <span class="cm-def3">RoundHole</span><span class="cm-bracket">(</span><span class="cm-variable">radius</span><span class="cm-bracket">)</span> <span class="cm-bracket">{</span> ... <span class="cm-bracket">}</span>
+
+    <span class="cm-keyword">method</span> <span class="cm-def3">getRadius</span><span class="cm-bracket">(</span><span class="cm-bracket">)</span> <span class="cm-keyword">is</span>
+        <span class="cm-doc">// Return the radius of the hole.</span>
+
+    <span class="cm-keyword">method</span> <span class="cm-def3">fits</span><span class="cm-bracket">(</span><span class="cm-variable">peg</span><span class="cm-bracket">:</span> <span class="cm-variable">RoundPeg</span><span class="cm-bracket">)</span> <span class="cm-keyword">is</span>
+        <span class="cm-keyword">return</span> <span class="cm-atom">this</span>.<span class="cm-variable">getRadius</span><span class="cm-bracket">(</span><span class="cm-bracket">)</span> <span class="cm-operator">&gt;</span><span class="cm-operator">=</span> <span class="cm-variable">peg</span>.<span class="cm-variable">getRadius</span><span class="cm-bracket">(</span><span class="cm-bracket">)</span>
+
+<span class="cm-keyword">class</span> <span class="cm-def1">RoundPeg</span> <span class="cm-keyword">is</span>
+    <span class="cm-keyword">constructor</span> <span class="cm-def3">RoundPeg</span><span class="cm-bracket">(</span><span class="cm-variable">radius</span><span class="cm-bracket">)</span> <span class="cm-bracket">{</span> ... <span class="cm-bracket">}</span>
+
+    <span class="cm-keyword">method</span> <span class="cm-def3">getRadius</span><span class="cm-bracket">(</span><span class="cm-bracket">)</span> <span class="cm-keyword">is</span>
+        <span class="cm-doc">// Return the radius of the peg.</span>
+
+
+<span class="cm-doc">// But there's an incompatible class: SquarePeg.</span>
+<span class="cm-keyword">class</span> <span class="cm-def1">SquarePeg</span> <span class="cm-keyword">is</span>
+    <span class="cm-keyword">constructor</span> <span class="cm-def3">SquarePeg</span><span class="cm-bracket">(</span><span class="cm-variable">width</span><span class="cm-bracket">)</span> <span class="cm-bracket">{</span> ... <span class="cm-bracket">}</span>
+
+    <span class="cm-keyword">method</span> <span class="cm-def3">getWidth</span><span class="cm-bracket">(</span><span class="cm-bracket">)</span> <span class="cm-keyword">is</span>
+        <span class="cm-doc">// Return the square peg width.</span>
+
+
+<span class="cm-doc">// An adapter class lets you fit square pegs into round holes.</span>
+<span class="cm-doc">// It extends the RoundPeg class to let the adapter objects act</span>
+<span class="cm-doc">// as round pegs.</span>
+<span class="cm-keyword">class</span> <span class="cm-def1">SquarePegAdapter</span> <span class="cm-keyword">extends</span> <span class="cm-def2">RoundPeg</span> <span class="cm-keyword">is</span>
+    <span class="cm-doc">// In reality, the adapter contains an instance of the</span>
+    <span class="cm-doc">// SquarePeg class.</span>
+    <span class="cm-keyword">private</span> <span class="cm-keyword">field</span> <span class="cm-def3">peg</span><span class="cm-bracket">:</span> <span class="cm-variable">SquarePeg</span>
+
+    <span class="cm-keyword">constructor</span> <span class="cm-def3">SquarePegAdapter</span><span class="cm-bracket">(</span><span class="cm-variable">peg</span><span class="cm-bracket">:</span> <span class="cm-variable">SquarePeg</span><span class="cm-bracket">)</span> <span class="cm-keyword">is</span>
+        <span class="cm-atom">this</span>.<span class="cm-variable">peg</span> <span class="cm-operator">=</span> <span class="cm-variable">peg</span>
+
+    <span class="cm-keyword">method</span> <span class="cm-def3">getRadius</span><span class="cm-bracket">(</span><span class="cm-bracket">)</span> <span class="cm-keyword">is</span>
+        <span class="cm-doc">// The adapter pretends that it's a round peg with a</span>
+        <span class="cm-doc">// radius that could fit the square peg that the adapter</span>
+        <span class="cm-doc">// actually wraps.</span>
+        <span class="cm-keyword">return</span> <span class="cm-variable">peg</span>.<span class="cm-variable">getWidth</span><span class="cm-bracket">(</span><span class="cm-bracket">)</span> <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-variable">sqrt</span><span class="cm-bracket">(</span><span class="cm-number">2</span><span class="cm-bracket">)</span> / <span class="cm-number">2</span>
+
+
+<span class="cm-doc">// Somewhere in client code.</span>
+<span class="cm-variable">hole</span> <span class="cm-operator">=</span> <span class="cm-keyword">new</span> <span class="cm-variable">RoundHole</span><span class="cm-bracket">(</span><span class="cm-number">5</span><span class="cm-bracket">)</span>
+<span class="cm-variable">rpeg</span> <span class="cm-operator">=</span> <span class="cm-keyword">new</span> <span class="cm-variable">RoundPeg</span><span class="cm-bracket">(</span><span class="cm-number">5</span><span class="cm-bracket">)</span>
+<span class="cm-variable">hole</span>.<span class="cm-variable">fits</span><span class="cm-bracket">(</span><span class="cm-variable">rpeg</span><span class="cm-bracket">)</span> <span class="cm-doc">// true</span>
+
+<span class="cm-variable">small_sqpeg</span> <span class="cm-operator">=</span> <span class="cm-keyword">new</span> <span class="cm-variable">SquarePeg</span><span class="cm-bracket">(</span><span class="cm-number">5</span><span class="cm-bracket">)</span>
+<span class="cm-variable">large_sqpeg</span> <span class="cm-operator">=</span> <span class="cm-keyword">new</span> <span class="cm-variable">SquarePeg</span><span class="cm-bracket">(</span><span class="cm-number">10</span><span class="cm-bracket">)</span>
+<span class="cm-variable">hole</span>.<span class="cm-variable">fits</span><span class="cm-bracket">(</span><span class="cm-variable">small_sqpeg</span><span class="cm-bracket">)</span> <span class="cm-doc">// this won't compile (incompatible types)</span>
+
+<span class="cm-variable">small_sqpeg_adapter</span> <span class="cm-operator">=</span> <span class="cm-keyword">new</span> <span class="cm-variable">SquarePegAdapter</span><span class="cm-bracket">(</span><span class="cm-variable">small_sqpeg</span><span class="cm-bracket">)</span>
+<span class="cm-variable">large_sqpeg_adapter</span> <span class="cm-operator">=</span> <span class="cm-keyword">new</span> <span class="cm-variable">SquarePegAdapter</span><span class="cm-bracket">(</span><span class="cm-variable">large_sqpeg</span><span class="cm-bracket">)</span>
+<span class="cm-variable">hole</span>.<span class="cm-variable">fits</span><span class="cm-bracket">(</span><span class="cm-variable">small_sqpeg_adapter</span><span class="cm-bracket">)</span> <span class="cm-doc">// true</span>
+<span class="cm-variable">hole</span>.<span class="cm-variable">fits</span><span class="cm-bracket">(</span><span class="cm-variable">large_sqpeg_adapter</span><span class="cm-bracket">)</span> <span class="cm-doc">// false</span>
+</pre>
+</figure>
+</div>
+<div class="section applicability-container">
+<h2 id="applicability"><i class="fa fa-lightbulb-on" aria-hidden="true"></i> Applicability</h2>
+<div class="applicability">
+<div class="applicability-problem">
+<p><i class="fa fa-fw fa-bug" aria-hidden="true"></i> Use the Adapter class when you want to use some existing class, but its interface isn’t compatible with the rest of your code.</p>
+</div><div class="applicability-solution">
+<p><i class="fa fa-fw fa-bolt" aria-hidden="true"></i> The Adapter 
+pattern lets you create a middle-layer class that serves as a translator
+ between your code and a legacy class, a 3rd-party class or any other 
+class with a weird interface.</p>
+</div>
+<div class="applicability-problem">
+<p><i class="fa fa-fw fa-bug" aria-hidden="true"></i> Use the pattern 
+when you want to reuse several existing subclasses that lack some common
+ functionality that can’t be added to the superclass.</p>
+</div><div class="applicability-solution">
+<p><i class="fa fa-fw fa-bolt" aria-hidden="true"></i> You could extend 
+each subclass and put the missing functionality into new child classes. 
+However, you’ll need to duplicate the code across all of these new 
+classes, which <a href="https://refactoring.guru/smells/duplicate-code">smells really bad</a>.</p>
+<p>The much more elegant solution would be to put the missing 
+functionality into an adapter class. Then you would wrap objects with 
+missing features inside the adapter, gaining needed features 
+dynamically. For this to work, the target classes must have a common 
+interface, and the adapter’s field should follow that interface. This 
+approach looks very similar to the <a href="https://refactoring.guru/design-patterns/decorator">Decorator</a> pattern.</p>
+</div>
+</div></div>
+<div class="section checklist">
+<h2 id="checklist"><i class="fa fa-clipboard-list-check" aria-hidden="true"></i> How to Implement</h2>
+<ol>
+<li>
+<p>Make sure that you have at least two classes with incompatible interfaces:</p>
+<ul>
+<li>A useful <em>service</em> class, which you can’t change (often 3rd-party, legacy or with lots of existing dependencies).</li>
+<li>One or several <em>client</em> classes that would benefit from using the service class.</li>
+</ul>
+</li>
+<li>
+<p>Declare the client interface and describe how clients communicate with the service.</p>
+</li>
+<li>
+<p>Create the adapter class and make it follow the client interface. Leave all the methods empty for now.</p>
+</li>
+<li>
+<p>Add a field to the adapter class to store a reference to the service 
+object. The common practice is to initialize this field via the 
+constructor, but sometimes it’s more convenient to pass it to the 
+adapter when calling its methods.</p>
+</li>
+<li>
+<p>One by one, implement all methods of the client interface in the 
+adapter class. The adapter should delegate most of the real work to the 
+service object, handling only the interface or data format conversion.</p>
+</li>
+<li>
+<p>Clients should use the adapter via the client interface. This will 
+let you change or extend the adapters without affecting the client code.</p>
+</li>
+</ol>
+</div>
+<div class="section pros-cons">
+<h2 id="pros-cons"><i class="fa fa-balance-scale" aria-hidden="true"></i> Pros and Cons</h2>
+<div class="row"><div class="col-sm-6">
+<ul>
+<li><i class="fa fa-fw fa-check" aria-hidden="true"></i> <em>Single Responsibility Principle</em>. You can separate the interface or data conversion code from the primary business logic of the program.</li>
+<li><i class="fa fa-fw fa-check" aria-hidden="true"></i> <em>Open/Closed Principle</em>.
+ You can introduce new types of adapters into the program without 
+breaking the existing client code, as long as they work with the 
+adapters through the client interface.</li>
+</ul>
+</div><div class="col-sm-6">
+<ul>
+<li><i class="fa fa-fw fa-times" aria-hidden="true"></i> The overall 
+complexity of the code increases because you need to introduce a set of 
+new interfaces and classes. Sometimes it’s simpler just to change the 
+service class so that it matches the rest of your code.</li>
+</ul>
+</div></div></div>
+<div class="section relations">
+<h2 id="relations"><i class="fa fa-exchange-alt" aria-hidden="true"></i> Relations with Other Patterns</h2>
+<ul>
+<li>
+<p><a href="https://refactoring.guru/design-patterns/bridge">Bridge</a> is usually designed up-front, letting you develop parts of an application independently of each other. On the other hand, <a href="https://refactoring.guru/design-patterns/adapter">Adapter</a> is commonly used with an existing app to make some otherwise-incompatible classes work together nicely.</p>
+</li>
+<li>
+<p><a href="https://refactoring.guru/design-patterns/adapter">Adapter</a> provides a completely different interface for accessing an existing object. On the other hand, with the <a href="https://refactoring.guru/design-patterns/decorator">Decorator</a> pattern the interface either stays the same or gets extended. In addition, <em>Decorator</em> supports recursive composition, which isn’t possible when you use <em>Adapter</em>.</p>
+</li>
+<li>
+<p>With <a href="https://refactoring.guru/design-patterns/adapter">Adapter</a> you access an existing object via different interface. With <a href="https://refactoring.guru/design-patterns/proxy">Proxy</a>, the interface stays the same. With <a href="https://refactoring.guru/design-patterns/decorator">Decorator</a> you access the object via an enhanced interface.</p>
+</li>
+<li>
+<p><a href="https://refactoring.guru/design-patterns/facade">Facade</a> defines a new interface for existing objects, whereas <a href="https://refactoring.guru/design-patterns/adapter">Adapter</a> tries to make the existing interface usable. <em>Adapter</em> usually wraps just one object, while <em>Facade</em> works with an entire subsystem of objects.</p>
+</li>
+<li>
+<p><a href="https://refactoring.guru/design-patterns/bridge">Bridge</a>, <a href="https://refactoring.guru/design-patterns/state">State</a>, <a href="https://refactoring.guru/design-patterns/strategy">Strategy</a> (and to some degree <a href="https://refactoring.guru/design-patterns/adapter">Adapter</a>)
+ have very similar structures. Indeed, all of these patterns are based 
+on composition, which is delegating work to other objects. However, they
+ all solve different problems. A pattern isn’t just a recipe for 
+structuring your code in a specific way. It can also communicate to 
+other developers the problem the pattern solves.</p>
+</li>
+</ul>
+</div>
+<div class="section implementations">
+<h2 id="implementations"><i class="fa fa-code" aria-hidden="true"></i> Code Examples</h2>
+<p><a href="https://refactoring.guru/design-patterns/adapter/csharp/example" title="Adapter in C#" class="prog-lang-link"><img width="53" height="53" loading="lazy" src="Adapter_files/csharp.svg" alt="Adapter in C#"></a>
+<a href="https://refactoring.guru/design-patterns/adapter/cpp/example" title="Adapter in C++" class="prog-lang-link"><img width="53" height="53" loading="lazy" src="Adapter_files/cpp.svg" alt="Adapter in C++"></a>
+<a href="https://refactoring.guru/design-patterns/adapter/go/example" title="Adapter in Go" class="prog-lang-link"><img width="53" height="53" loading="lazy" src="Adapter_files/go.svg" alt="Adapter in Go"></a>
+<a href="https://refactoring.guru/design-patterns/adapter/java/example" title="Adapter in Java" class="prog-lang-link"><img width="53" height="53" loading="lazy" src="Adapter_files/java.svg" alt="Adapter in Java"></a>
+<a href="https://refactoring.guru/design-patterns/adapter/php/example" title="Adapter in PHP" class="prog-lang-link"><img width="53" height="53" loading="lazy" src="Adapter_files/php.svg" alt="Adapter in PHP"></a>
+<a href="https://refactoring.guru/design-patterns/adapter/python/example" title="Adapter in Python" class="prog-lang-link"><img width="53" height="53" loading="lazy" src="Adapter_files/python.svg" alt="Adapter in Python"></a>
+<a href="https://refactoring.guru/design-patterns/adapter/ruby/example" title="Adapter in Ruby" class="prog-lang-link"><img width="53" height="53" loading="lazy" src="Adapter_files/ruby.svg" alt="Adapter in Ruby"></a>
+<a href="https://refactoring.guru/design-patterns/adapter/rust/example" title="Adapter in Rust" class="prog-lang-link"><img width="53" height="53" loading="lazy" src="Adapter_files/rust.svg" alt="Adapter in Rust"></a>
+<a href="https://refactoring.guru/design-patterns/adapter/swift/example" title="Adapter in Swift" class="prog-lang-link"><img width="53" height="53" loading="lazy" src="Adapter_files/swift.svg" alt="Adapter in Swift"></a>
+<a href="https://refactoring.guru/design-patterns/adapter/typescript/example" title="Adapter in TypeScript" class="prog-lang-link"><img width="53" height="53" loading="lazy" src="Adapter_files/typescript.svg" alt="Adapter in TypeScript"></a></p>
+</div>
+
+
+    <div class="banner-set2" id="book-promo">
+            <div class="prom banner-content banner-bg banner-striped banner-with-image ga-triggered" data-id="DP: 1: Support our free website and own the eBook!" data-creative-id="standard-en" data-position="content_bottom">
+                <div class="banner-image">
+                    <a href="https://refactoring.guru/design-patterns/book">
+                        <img width="200" height="200" loading="lazy" src="Adapter_files/patterns-book-banner-3.png" srcset="Adapter_files/patterns-book-banner-3-2x.png 2x">
+                    </a>
+                </div>
+
+                <div class="banner-text">
+                    <h3 class="title">Support our free website and own the eBook!</h3>
+                    <ul style="font-size: 14px;">
+                        <li style="margin: 0;">22 design patterns and 8 principles explained in depth.</li>
+                        <li style="margin: 0;">409 well-structured, easy to read, jargon-free pages.</li>
+                        <li style="margin: 0;">225 clear and helpful illustrations and diagrams.</li>
+                        <li style="margin: 0;">An archive with code examples in 11 languages.</li>
+                        <li style="margin: 0;">All devices supported: PDF/EPUB/MOBI/KFX formats.</li>
+                    </ul>
+                    <a class="btn btn-secondary" href="https://refactoring.guru/design-patterns/book"><i class="fa fa-book" aria-hidden="true"></i> Learn more…</a>
+                </div>
+            </div>
+        </div>
+
+    </article>
+
+<nav class="prev-next">
+                    <div class="next">
+                <h4>Read next</h4>
+                <a rel="next" href="https://refactoring.guru/design-patterns/bridge" class="btn btn-primary">Bridge&nbsp;<span class="fa fa-arrow-right"></span></a>
+            </div>
+                            <div class="prev">
+                <h4>Return</h4>
+                <a rel="prev" href="https://refactoring.guru/design-patterns/structural-patterns" class="btn btn-default"><span class="fa fa-arrow-left"></span>&nbsp;Structural Patterns </a>
+            </div>
+            </nav>
+</div>
+
+<aside class="feature content-secondary affix-top">
+    <div class="prom banner-sidebar banner-removable banner-removable-patterns ga-triggered" data-id="DP: Sidebar" data-creative-id="standard-sidebar-en" data-position="sidebar">
+        <div class="banner-inner">
+            <div class="image3d-book-right">
+                <div class="image3d-cover" style="background: #0b3752;">
+                    <a href="https://refactoring.guru/design-patterns/book">
+                        <img width="250" height="375" loading="lazy" src="Adapter_files/web-cover-en.png" srcset="Adapter_files/web-cover-en-2x.png 2x">
+                    </a>
+                </div>
+            </div>
+            <div style="margin-top: 1rem">
+                <p class="text-center">This article is a part of our eBook<br><strong>Dive Into Design Patterns</strong>.</p>
+                <a href="https://refactoring.guru/design-patterns/book" class="btn btn-secondary btn-block"><i class="fa fa-book" aria-hidden="true"></i> Learn more…</a>
+            </div>
+        </div>
+    </div>
+
+
+</aside>
+                    </div>
+    </main>
+
+    <aside class="sidebar main-menu">
+    <div class="main-menu-controls">
+        <button class="navigation-toggle"><i class="fa fa-fw fa-times"></i></button>
+    </div>
+    <div class="main-menu-list-wrapper nano">
+        <div class="main-menu-list nano-content">
+            <a class="menu-brand" href="https://refactoring.guru/">
+                                    <img width="200" height="241" loading="lazy" alt="Refactoring.Guru" src="Adapter_files/logo-new.png" srcset="Adapter_files/logo-new-2x.png 2x">
+                            </a>
+
+            <div class="menu-container" style="position: relative">
+                                <ul class="menu-list ready">
+            
+                
+    
+        <li class="featured">
+            <a href="https://refactoring.guru/store">
+                <i class="fa fa-fw fa-star" aria-hidden="true"></i> Premium Content
+            </a>
+    
+
+    
+        <ul>
+            
+                
+    
+        <li class="featured menu-fs15">
+            <a href="https://refactoring.guru/design-patterns/book">
+                <i class="fa fa-fw fa-book" aria-hidden="true"></i> Design Patterns eBook
+            </a>
+    
+
+    
+
+    
+        </li>
+    
+
+            
+                
+    
+        <li class="featured menu-fs15">
+            <a href="https://refactoring.guru/refactoring/course">
+                <i class="fa fa-fw fa-graduation-cap" aria-hidden="true"></i> Refactoring Course
+            </a>
+    
+
+    
+
+    
+        </li>
+    
+
+            
+        </ul>
+    
+
+    
+        </li>
+    
+
+            
+                
+    
+        <li class="">
+            <a href="https://refactoring.guru/refactoring">
+                <i class="fa fa-fw fa-scissors" aria-hidden="true"></i> Refactoring
+            </a>
+    
+
+    
+        <ul>
+            
+                
+    
+        <li class="">
+            <a href="https://refactoring.guru/refactoring/what-is-refactoring">
+                What is Refactoring
+            </a>
+    
+
+    
+        <ul>
+            
+                
+    
+        <li class="">
+            <a href="https://refactoring.guru/refactoring/what-is-refactoring">
+                Clean code
+            </a>
+    
+
+    
+
+    
+        </li>
+    
+
+            
+                
+    
+        <li class="">
+            <a href="https://refactoring.guru/refactoring/technical-debt">
+                Technical debt
+            </a>
+    
+
+    
+
+    
+        </li>
+    
+
+            
+                
+    
+        <li class="">
+            <a href="https://refactoring.guru/refactoring/when">
+                When to refactor
+            </a>
+    
+
+    
+
+    
+        </li>
+    
+
+            
+                
+    
+        <li class="">
+            <a href="https://refactoring.guru/refactoring/how-to">
+                How to refactor
+            </a>
+    
+
+    
+
+    
+        </li>
+    
+
+            
+        </ul>
+    
+
+    
+        </li>
+    
+
+            
+                
+    
+        <li class="">
+            <a href="https://refactoring.guru/refactoring/catalog">
+                Catalog
+            </a>
+    
+
+    
+
+    
+        </li>
+    
+
+            
+                
+    
+        <li class="">
+            <a href="https://refactoring.guru/refactoring/smells">
+                Code Smells
+            </a>
+    
+
+    
+        <ul>
+            
+                
+    
+        <li class="">
+            <a href="https://refactoring.guru/refactoring/smells/bloaters">
+                Bloaters
+            </a>
+    
+
+    
+        <ul>
+            
+                
+    
+        <li class="">
+            <a href="https://refactoring.guru/smells/long-method">
+                Long Method
+            </a>
+    
+
+    
+
+    
+        </li>
+    
+
+            
+                
+    
+        <li class="">
+            <a href="https://refactoring.guru/smells/large-class">
+                Large Class
+            </a>
+    
+
+    
+
+    
+        </li>
+    
+
+            
+                
+    
+        <li class="">
+            <a href="https://refactoring.guru/smells/primitive-obsession">
+                Primitive Obsession
+            </a>
+    
+
+    
+
+    
+        </li>
+    
+
+            
+                
+    
+        <li class="">
+            <a href="https://refactoring.guru/smells/long-parameter-list">
+                Long Parameter List
+            </a>
+    
+
+    
+
+    
+        </li>
+    
+
+            
+                
+    
+        <li class="">
+            <a href="https://refactoring.guru/smells/data-clumps">
+                Data Clumps
+            </a>
+    
+
+    
+
+    
+        </li>
+    
+
+            
+        </ul>
+    
+
+    
+        </li>
+    
+
+            
+                
+    
+        <li class="">
+            <a href="https://refactoring.guru/refactoring/smells/oo-abusers">
+                Object-Orientation Abusers
+            </a>
+    
+
+    
+        <ul>
+            
+                
+    
+        <li class="">
+            <a href="https://refactoring.guru/smells/switch-statements">
+                Switch Statements
+            </a>
+    
+
+    
+
+    
+        </li>
+    
+
+            
+                
+    
+        <li class="">
+            <a href="https://refactoring.guru/smells/temporary-field">
+                Temporary Field
+            </a>
+    
+
+    
+
+    
+        </li>
+    
+
+            
+                
+    
+        <li class="">
+            <a href="https://refactoring.guru/smells/refused-bequest">
+                Refused Bequest
+            </a>
+    
+
+    
+
+    
+        </li>
+    
+
+            
+                
+    
+        <li class="">
+            <a href="https://refactoring.guru/smells/alternative-classes-with-different-interfaces">
+                Alternative Classes with Different Interfaces
+            </a>
+    
+
+    
+
+    
+        </li>
+    
+
+            
+        </ul>
+    
+
+    
+        </li>
+    
+
+            
+                
+    
+        <li class="">
+            <a href="https://refactoring.guru/refactoring/smells/change-preventers">
+                Change Preventers
+            </a>
+    
+
+    
+        <ul>
+            
+                
+    
+        <li class="">
+            <a href="https://refactoring.guru/smells/divergent-change">
+                Divergent Change
+            </a>
+    
+
+    
+
+    
+        </li>
+    
+
+            
+                
+    
+        <li class="">
+            <a href="https://refactoring.guru/smells/shotgun-surgery">
+                Shotgun Surgery
+            </a>
+    
+
+    
+
+    
+        </li>
+    
+
+            
+                
+    
+        <li class="">
+            <a href="https://refactoring.guru/smells/parallel-inheritance-hierarchies">
+                Parallel Inheritance Hierarchies
+            </a>
+    
+
+    
+
+    
+        </li>
+    
+
+            
+        </ul>
+    
+
+    
+        </li>
+    
+
+            
+                
+    
+        <li class="">
+            <a href="https://refactoring.guru/refactoring/smells/dispensables">
+                Dispensables
+            </a>
+    
+
+    
+        <ul>
+            
+                
+    
+        <li class="">
+            <a href="https://refactoring.guru/smells/comments">
+                Comments
+            </a>
+    
+
+    
+
+    
+        </li>
+    
+
+            
+                
+    
+        <li class="">
+            <a href="https://refactoring.guru/smells/duplicate-code">
+                Duplicate Code
+            </a>
+    
+
+    
+
+    
+        </li>
+    
+
+            
+                
+    
+        <li class="">
+            <a href="https://refactoring.guru/smells/lazy-class">
+                Lazy Class
+            </a>
+    
+
+    
+
+    
+        </li>
+    
+
+            
+                
+    
+        <li class="">
+            <a href="https://refactoring.guru/smells/data-class">
+                Data Class
+            </a>
+    
+
+    
+
+    
+        </li>
+    
+
+            
+                
+    
+        <li class="">
+            <a href="https://refactoring.guru/smells/dead-code">
+                Dead Code
+            </a>
+    
+
+    
+
+    
+        </li>
+    
+
+            
+                
+    
+        <li class="">
+            <a href="https://refactoring.guru/smells/speculative-generality">
+                Speculative Generality
+            </a>
+    
+
+    
+
+    
+        </li>
+    
+
+            
+        </ul>
+    
+
+    
+        </li>
+    
+
+            
+                
+    
+        <li class="">
+            <a href="https://refactoring.guru/refactoring/smells/couplers">
+                Couplers
+            </a>
+    
+
+    
+        <ul>
+            
+                
+    
+        <li class="">
+            <a href="https://refactoring.guru/smells/feature-envy">
+                Feature Envy
+            </a>
+    
+
+    
+
+    
+        </li>
+    
+
+            
+                
+    
+        <li class="">
+            <a href="https://refactoring.guru/smells/inappropriate-intimacy">
+                Inappropriate Intimacy
+            </a>
+    
+
+    
+
+    
+        </li>
+    
+
+            
+                
+    
+        <li class="">
+            <a href="https://refactoring.guru/smells/message-chains">
+                Message Chains
+            </a>
+    
+
+    
+
+    
+        </li>
+    
+
+            
+                
+    
+        <li class="">
+            <a href="https://refactoring.guru/smells/middle-man">
+                Middle Man
+            </a>
+    
+
+    
+
+    
+        </li>
+    
+
+            
+        </ul>
+    
+
+    
+        </li>
+    
+
+            
+                
+    
+        <li class="">
+            <a href="https://refactoring.guru/refactoring/smells/other">
+                Other Smells
+            </a>
+    
+
+    
+        <ul>
+            
+                
+    
+        <li class="">
+            <a href="https://refactoring.guru/smells/incomplete-library-class">
+                Incomplete Library Class
+            </a>
+    
+
+    
+
+    
+        </li>
+    
+
+            
+        </ul>
+    
+
+    
+        </li>
+    
+
+            
+        </ul>
+    
+
+    
+        </li>
+    
+
+            
+                
+    
+        <li class="">
+            <a href="https://refactoring.guru/refactoring/techniques">
+                Refactorings
+            </a>
+    
+
+    
+        <ul>
+            
+                
+    
+        <li class="">
+            <a href="https://refactoring.guru/refactoring/techniques/composing-methods">
+                Composing Methods
+            </a>
+    
+
+    
+        <ul>
+            
+                
+    
+        <li class="">
+            <a href="https://refactoring.guru/extract-method">
+                Extract Method
+            </a>
+    
+
+    
+
+    
+        </li>
+    
+
+            
+                
+    
+        <li class="">
+            <a href="https://refactoring.guru/inline-method">
+                Inline Method
+            </a>
+    
+
+    
+
+    
+        </li>
+    
+
+            
+                
+    
+        <li class="">
+            <a href="https://refactoring.guru/extract-variable">
+                Extract Variable
+            </a>
+    
+
+    
+
+    
+        </li>
+    
+
+            
+                
+    
+        <li class="">
+            <a href="https://refactoring.guru/inline-temp">
+                Inline Temp
+            </a>
+    
+
+    
+
+    
+        </li>
+    
+
+            
+                
+    
+        <li class="">
+            <a href="https://refactoring.guru/replace-temp-with-query">
+                Replace Temp with Query
+            </a>
+    
+
+    
+
+    
+        </li>
+    
+
+            
+                
+    
+        <li class="">
+            <a href="https://refactoring.guru/split-temporary-variable">
+                Split Temporary Variable
+            </a>
+    
+
+    
+
+    
+        </li>
+    
+
+            
+                
+    
+        <li class="">
+            <a href="https://refactoring.guru/remove-assignments-to-parameters">
+                Remove Assignments to Parameters
+            </a>
+    
+
+    
+
+    
+        </li>
+    
+
+            
+                
+    
+        <li class="">
+            <a href="https://refactoring.guru/replace-method-with-method-object">
+                Replace Method with Method Object
+            </a>
+    
+
+    
+
+    
+        </li>
+    
+
+            
+                
+    
+        <li class="">
+            <a href="https://refactoring.guru/substitute-algorithm">
+                Substitute Algorithm
+            </a>
+    
+
+    
+
+    
+        </li>
+    
+
+            
+        </ul>
+    
+
+    
+        </li>
+    
+
+            
+                
+    
+        <li class="">
+            <a href="https://refactoring.guru/refactoring/techniques/moving-features-between-objects">
+                Moving Features between Objects
+            </a>
+    
+
+    
+        <ul>
+            
+                
+    
+        <li class="">
+            <a href="https://refactoring.guru/move-method">
+                Move Method
+            </a>
+    
+
+    
+
+    
+        </li>
+    
+
+            
+                
+    
+        <li class="">
+            <a href="https://refactoring.guru/move-field">
+                Move Field
+            </a>
+    
+
+    
+
+    
+        </li>
+    
+
+            
+                
+    
+        <li class="">
+            <a href="https://refactoring.guru/extract-class">
+                Extract Class
+            </a>
+    
+
+    
+
+    
+        </li>
+    
+
+            
+                
+    
+        <li class="">
+            <a href="https://refactoring.guru/inline-class">
+                Inline Class
+            </a>
+    
+
+    
+
+    
+        </li>
+    
+
+            
+                
+    
+        <li class="">
+            <a href="https://refactoring.guru/hide-delegate">
+                Hide Delegate
+            </a>
+    
+
+    
+
+    
+        </li>
+    
+
+            
+                
+    
+        <li class="">
+            <a href="https://refactoring.guru/remove-middle-man">
+                Remove Middle Man
+            </a>
+    
+
+    
+
+    
+        </li>
+    
+
+            
+                
+    
+        <li class="">
+            <a href="https://refactoring.guru/introduce-foreign-method">
+                Introduce Foreign Method
+            </a>
+    
+
+    
+
+    
+        </li>
+    
+
+            
+                
+    
+        <li class="">
+            <a href="https://refactoring.guru/introduce-local-extension">
+                Introduce Local Extension
+            </a>
+    
+
+    
+
+    
+        </li>
+    
+
+            
+        </ul>
+    
+
+    
+        </li>
+    
+
+            
+                
+    
+        <li class="">
+            <a href="https://refactoring.guru/refactoring/techniques/organizing-data">
+                Organizing Data
+            </a>
+    
+
+    
+        <ul>
+            
+                
+    
+        <li class="">
+            <a href="https://refactoring.guru/self-encapsulate-field">
+                Self Encapsulate Field
+            </a>
+    
+
+    
+
+    
+        </li>
+    
+
+            
+                
+    
+        <li class="">
+            <a href="https://refactoring.guru/replace-data-value-with-object">
+                Replace Data Value with Object
+            </a>
+    
+
+    
+
+    
+        </li>
+    
+
+            
+                
+    
+        <li class="">
+            <a href="https://refactoring.guru/change-value-to-reference">
+                Change Value to Reference
+            </a>
+    
+
+    
+
+    
+        </li>
+    
+
+            
+                
+    
+        <li class="">
+            <a href="https://refactoring.guru/change-reference-to-value">
+                Change Reference to Value
+            </a>
+    
+
+    
+
+    
+        </li>
+    
+
+            
+                
+    
+        <li class="">
+            <a href="https://refactoring.guru/replace-array-with-object">
+                Replace Array with Object
+            </a>
+    
+
+    
+
+    
+        </li>
+    
+
+            
+                
+    
+        <li class="">
+            <a href="https://refactoring.guru/duplicate-observed-data">
+                Duplicate Observed Data
+            </a>
+    
+
+    
+
+    
+        </li>
+    
+
+            
+                
+    
+        <li class="">
+            <a href="https://refactoring.guru/change-unidirectional-association-to-bidirectional">
+                Change Unidirectional Association to Bidirectional
+            </a>
+    
+
+    
+
+    
+        </li>
+    
+
+            
+                
+    
+        <li class="">
+            <a href="https://refactoring.guru/change-bidirectional-association-to-unidirectional">
+                Change Bidirectional Association to Unidirectional
+            </a>
+    
+
+    
+
+    
+        </li>
+    
+
+            
+                
+    
+        <li class="">
+            <a href="https://refactoring.guru/replace-magic-number-with-symbolic-constant">
+                Replace Magic Number with Symbolic Constant
+            </a>
+    
+
+    
+
+    
+        </li>
+    
+
+            
+                
+    
+        <li class="">
+            <a href="https://refactoring.guru/encapsulate-field">
+                Encapsulate Field
+            </a>
+    
+
+    
+
+    
+        </li>
+    
+
+            
+                
+    
+        <li class="">
+            <a href="https://refactoring.guru/encapsulate-collection">
+                Encapsulate Collection
+            </a>
+    
+
+    
+
+    
+        </li>
+    
+
+            
+                
+    
+        <li class="">
+            <a href="https://refactoring.guru/replace-type-code-with-class">
+                Replace Type Code with Class
+            </a>
+    
+
+    
+
+    
+        </li>
+    
+
+            
+                
+    
+        <li class="">
+            <a href="https://refactoring.guru/replace-type-code-with-subclasses">
+                Replace Type Code with Subclasses
+            </a>
+    
+
+    
+
+    
+        </li>
+    
+
+            
+                
+    
+        <li class="">
+            <a href="https://refactoring.guru/replace-type-code-with-state-strategy">
+                Replace Type Code with State/Strategy
+            </a>
+    
+
+    
+
+    
+        </li>
+    
+
+            
+                
+    
+        <li class="">
+            <a href="https://refactoring.guru/replace-subclass-with-fields">
+                Replace Subclass with Fields
+            </a>
+    
+
+    
+
+    
+        </li>
+    
+
+            
+        </ul>
+    
+
+    
+        </li>
+    
+
+            
+                
+    
+        <li class="">
+            <a href="https://refactoring.guru/refactoring/techniques/simplifying-conditional-expressions">
+                Simplifying Conditional Expressions
+            </a>
+    
+
+    
+        <ul>
+            
+                
+    
+        <li class="">
+            <a href="https://refactoring.guru/decompose-conditional">
+                Decompose Conditional
+            </a>
+    
+
+    
+
+    
+        </li>
+    
+
+            
+                
+    
+        <li class="">
+            <a href="https://refactoring.guru/consolidate-conditional-expression">
+                Consolidate Conditional Expression
+            </a>
+    
+
+    
+
+    
+        </li>
+    
+
+            
+                
+    
+        <li class="">
+            <a href="https://refactoring.guru/consolidate-duplicate-conditional-fragments">
+                Consolidate Duplicate Conditional Fragments
+            </a>
+    
+
+    
+
+    
+        </li>
+    
+
+            
+                
+    
+        <li class="">
+            <a href="https://refactoring.guru/remove-control-flag">
+                Remove Control Flag
+            </a>
+    
+
+    
+
+    
+        </li>
+    
+
+            
+                
+    
+        <li class="">
+            <a href="https://refactoring.guru/replace-nested-conditional-with-guard-clauses">
+                Replace Nested Conditional with Guard Clauses
+            </a>
+    
+
+    
+
+    
+        </li>
+    
+
+            
+                
+    
+        <li class="">
+            <a href="https://refactoring.guru/replace-conditional-with-polymorphism">
+                Replace Conditional with Polymorphism
+            </a>
+    
+
+    
+
+    
+        </li>
+    
+
+            
+                
+    
+        <li class="">
+            <a href="https://refactoring.guru/introduce-null-object">
+                Introduce Null Object
+            </a>
+    
+
+    
+
+    
+        </li>
+    
+
+            
+                
+    
+        <li class="">
+            <a href="https://refactoring.guru/introduce-assertion">
+                Introduce Assertion
+            </a>
+    
+
+    
+
+    
+        </li>
+    
+
+            
+        </ul>
+    
+
+    
+        </li>
+    
+
+            
+                
+    
+        <li class="">
+            <a href="https://refactoring.guru/refactoring/techniques/simplifying-method-calls">
+                Simplifying Method Calls
+            </a>
+    
+
+    
+        <ul>
+            
+                
+    
+        <li class="">
+            <a href="https://refactoring.guru/rename-method">
+                Rename Method
+            </a>
+    
+
+    
+
+    
+        </li>
+    
+
+            
+                
+    
+        <li class="">
+            <a href="https://refactoring.guru/add-parameter">
+                Add Parameter
+            </a>
+    
+
+    
+
+    
+        </li>
+    
+
+            
+                
+    
+        <li class="">
+            <a href="https://refactoring.guru/remove-parameter">
+                Remove Parameter
+            </a>
+    
+
+    
+
+    
+        </li>
+    
+
+            
+                
+    
+        <li class="">
+            <a href="https://refactoring.guru/separate-query-from-modifier">
+                Separate Query from Modifier
+            </a>
+    
+
+    
+
+    
+        </li>
+    
+
+            
+                
+    
+        <li class="">
+            <a href="https://refactoring.guru/parameterize-method">
+                Parameterize Method
+            </a>
+    
+
+    
+
+    
+        </li>
+    
+
+            
+                
+    
+        <li class="">
+            <a href="https://refactoring.guru/replace-parameter-with-explicit-methods">
+                Replace Parameter with Explicit Methods
+            </a>
+    
+
+    
+
+    
+        </li>
+    
+
+            
+                
+    
+        <li class="">
+            <a href="https://refactoring.guru/preserve-whole-object">
+                Preserve Whole Object
+            </a>
+    
+
+    
+
+    
+        </li>
+    
+
+            
+                
+    
+        <li class="">
+            <a href="https://refactoring.guru/replace-parameter-with-method-call">
+                Replace Parameter with Method Call
+            </a>
+    
+
+    
+
+    
+        </li>
+    
+
+            
+                
+    
+        <li class="">
+            <a href="https://refactoring.guru/introduce-parameter-object">
+                Introduce Parameter Object
+            </a>
+    
+
+    
+
+    
+        </li>
+    
+
+            
+                
+    
+        <li class="">
+            <a href="https://refactoring.guru/remove-setting-method">
+                Remove Setting Method
+            </a>
+    
+
+    
+
+    
+        </li>
+    
+
+            
+                
+    
+        <li class="">
+            <a href="https://refactoring.guru/hide-method">
+                Hide Method
+            </a>
+    
+
+    
+
+    
+        </li>
+    
+
+            
+                
+    
+        <li class="">
+            <a href="https://refactoring.guru/replace-constructor-with-factory-method">
+                Replace Constructor with Factory Method
+            </a>
+    
+
+    
+
+    
+        </li>
+    
+
+            
+                
+    
+        <li class="">
+            <a href="https://refactoring.guru/replace-error-code-with-exception">
+                Replace Error Code with Exception
+            </a>
+    
+
+    
+
+    
+        </li>
+    
+
+            
+                
+    
+        <li class="">
+            <a href="https://refactoring.guru/replace-exception-with-test">
+                Replace Exception with Test
+            </a>
+    
+
+    
+
+    
+        </li>
+    
+
+            
+        </ul>
+    
+
+    
+        </li>
+    
+
+            
+                
+    
+        <li class="">
+            <a href="https://refactoring.guru/refactoring/techniques/dealing-with-generalization">
+                Dealing with Generalization
+            </a>
+    
+
+    
+        <ul>
+            
+                
+    
+        <li class="">
+            <a href="https://refactoring.guru/pull-up-field">
+                Pull Up Field
+            </a>
+    
+
+    
+
+    
+        </li>
+    
+
+            
+                
+    
+        <li class="">
+            <a href="https://refactoring.guru/pull-up-method">
+                Pull Up Method
+            </a>
+    
+
+    
+
+    
+        </li>
+    
+
+            
+                
+    
+        <li class="">
+            <a href="https://refactoring.guru/pull-up-constructor-body">
+                Pull Up Constructor Body
+            </a>
+    
+
+    
+
+    
+        </li>
+    
+
+            
+                
+    
+        <li class="">
+            <a href="https://refactoring.guru/push-down-method">
+                Push Down Method
+            </a>
+    
+
+    
+
+    
+        </li>
+    
+
+            
+                
+    
+        <li class="">
+            <a href="https://refactoring.guru/push-down-field">
+                Push Down Field
+            </a>
+    
+
+    
+
+    
+        </li>
+    
+
+            
+                
+    
+        <li class="">
+            <a href="https://refactoring.guru/extract-subclass">
+                Extract Subclass
+            </a>
+    
+
+    
+
+    
+        </li>
+    
+
+            
+                
+    
+        <li class="">
+            <a href="https://refactoring.guru/extract-superclass">
+                Extract Superclass
+            </a>
+    
+
+    
+
+    
+        </li>
+    
+
+            
+                
+    
+        <li class="">
+            <a href="https://refactoring.guru/extract-interface">
+                Extract Interface
+            </a>
+    
+
+    
+
+    
+        </li>
+    
+
+            
+                
+    
+        <li class="">
+            <a href="https://refactoring.guru/collapse-hierarchy">
+                Collapse Hierarchy
+            </a>
+    
+
+    
+
+    
+        </li>
+    
+
+            
+                
+    
+        <li class="">
+            <a href="https://refactoring.guru/form-template-method">
+                Form Template Method
+            </a>
+    
+
+    
+
+    
+        </li>
+    
+
+            
+                
+    
+        <li class="">
+            <a href="https://refactoring.guru/replace-inheritance-with-delegation">
+                Replace Inheritance with Delegation
+            </a>
+    
+
+    
+
+    
+        </li>
+    
+
+            
+                
+    
+        <li class="">
+            <a href="https://refactoring.guru/replace-delegation-with-inheritance">
+                Replace Delegation with Inheritance
+            </a>
+    
+
+    
+
+    
+        </li>
+    
+
+            
+        </ul>
+    
+
+    
+        </li>
+    
+
+            
+        </ul>
+    
+
+    
+        </li>
+    
+
+            
+        </ul>
+    
+
+    
+        </li>
+    
+
+            
+                
+    
+        <li class="trail">
+            <a href="https://refactoring.guru/design-patterns">
+                <i class="fa fa-fw fa-puzzle-piece" aria-hidden="true"></i> Design Patterns
+            </a>
+    
+
+    
+        <ul>
+            
+                
+    
+        <li class="">
+            <a href="https://refactoring.guru/design-patterns/what-is-pattern">
+                What is a Pattern
+            </a>
+    
+
+    
+        <ul>
+            
+                
+    
+        <li class="">
+            <a href="https://refactoring.guru/design-patterns/what-is-pattern">
+                What's a design pattern?
+            </a>
+    
+
+    
+
+    
+        </li>
+    
+
+            
+                
+    
+        <li class="">
+            <a href="https://refactoring.guru/design-patterns/history">
+                History of patterns
+            </a>
+    
+
+    
+
+    
+        </li>
+    
+
+            
+                
+    
+        <li class="">
+            <a href="https://refactoring.guru/design-patterns/why-learn-patterns">
+                Why should I learn patterns?
+            </a>
+    
+
+    
+
+    
+        </li>
+    
+
+            
+                
+    
+        <li class="">
+            <a href="https://refactoring.guru/design-patterns/criticism">
+                Criticism of patterns
+            </a>
+    
+
+    
+
+    
+        </li>
+    
+
+            
+                
+    
+        <li class="">
+            <a href="https://refactoring.guru/design-patterns/classification">
+                Classification of patterns
+            </a>
+    
+
+    
+
+    
+        </li>
+    
+
+            
+        </ul>
+    
+
+    
+        </li>
+    
+
+            
+                
+    
+        <li class="">
+            <a href="https://refactoring.guru/design-patterns/catalog">
+                Catalog
+            </a>
+    
+
+    
+
+    
+        </li>
+    
+
+            
+                
+    
+        <li class="menu-third-level">
+            <a href="https://refactoring.guru/design-patterns/creational-patterns">
+                Creational Patterns
+            </a>
+    
+
+    
+        <ul>
+            
+                
+    
+        <li class="">
+            <a href="https://refactoring.guru/design-patterns/factory-method">
+                Factory Method
+            </a>
+    
+
+    
+
+    
+        </li>
+    
+
+            
+                
+    
+        <li class="">
+            <a href="https://refactoring.guru/design-patterns/abstract-factory">
+                Abstract Factory
+            </a>
+    
+
+    
+
+    
+        </li>
+    
+
+            
+                
+    
+        <li class="">
+            <a href="https://refactoring.guru/design-patterns/builder">
+                Builder
+            </a>
+    
+
+    
+
+    
+        </li>
+    
+
+            
+                
+    
+        <li class="">
+            <a href="https://refactoring.guru/design-patterns/prototype">
+                Prototype
+            </a>
+    
+
+    
+
+    
+        </li>
+    
+
+            
+                
+    
+        <li class="">
+            <a href="https://refactoring.guru/design-patterns/singleton">
+                Singleton
+            </a>
+    
+
+    
+
+    
+        </li>
+    
+
+            
+        </ul>
+    
+
+    
+        </li>
+    
+
+            
+                
+    
+        <li class="menu-third-level trail">
+            <a href="https://refactoring.guru/design-patterns/structural-patterns">
+                Structural Patterns
+            </a>
+    
+
+    
+        <ul>
+            
+                
+    
+        <li class="trail active">
+            <a href="https://refactoring.guru/design-patterns/adapter">
+                Adapter
+            </a>
+    
+
+    
+
+    
+        </li>
+    
+
+            
+                
+    
+        <li class="">
+            <a href="https://refactoring.guru/design-patterns/bridge">
+                Bridge
+            </a>
+    
+
+    
+
+    
+        </li>
+    
+
+            
+                
+    
+        <li class="">
+            <a href="https://refactoring.guru/design-patterns/composite">
+                Composite
+            </a>
+    
+
+    
+
+    
+        </li>
+    
+
+            
+                
+    
+        <li class="">
+            <a href="https://refactoring.guru/design-patterns/decorator">
+                Decorator
+            </a>
+    
+
+    
+
+    
+        </li>
+    
+
+            
+                
+    
+        <li class="">
+            <a href="https://refactoring.guru/design-patterns/facade">
+                Facade
+            </a>
+    
+
+    
+
+    
+        </li>
+    
+
+            
+                
+    
+        <li class="">
+            <a href="https://refactoring.guru/design-patterns/flyweight">
+                Flyweight
+            </a>
+    
+
+    
+
+    
+        </li>
+    
+
+            
+                
+    
+        <li class="">
+            <a href="https://refactoring.guru/design-patterns/proxy">
+                Proxy
+            </a>
+    
+
+    
+
+    
+        </li>
+    
+
+            
+        </ul>
+    
+
+    
+        </li>
+    
+
+            
+                
+    
+        <li class="menu-third-level">
+            <a href="https://refactoring.guru/design-patterns/behavioral-patterns">
+                Behavioral Patterns
+            </a>
+    
+
+    
+        <ul>
+            
+                
+    
+        <li class="">
+            <a href="https://refactoring.guru/design-patterns/chain-of-responsibility">
+                Chain of Responsibility
+            </a>
+    
+
+    
+
+    
+        </li>
+    
+
+            
+                
+    
+        <li class="">
+            <a href="https://refactoring.guru/design-patterns/command">
+                Command
+            </a>
+    
+
+    
+
+    
+        </li>
+    
+
+            
+                
+    
+        <li class="">
+            <a href="https://refactoring.guru/design-patterns/iterator">
+                Iterator
+            </a>
+    
+
+    
+
+    
+        </li>
+    
+
+            
+                
+    
+        <li class="">
+            <a href="https://refactoring.guru/design-patterns/mediator">
+                Mediator
+            </a>
+    
+
+    
+
+    
+        </li>
+    
+
+            
+                
+    
+        <li class="">
+            <a href="https://refactoring.guru/design-patterns/memento">
+                Memento
+            </a>
+    
+
+    
+
+    
+        </li>
+    
+
+            
+                
+    
+        <li class="">
+            <a href="https://refactoring.guru/design-patterns/observer">
+                Observer
+            </a>
+    
+
+    
+
+    
+        </li>
+    
+
+            
+                
+    
+        <li class="">
+            <a href="https://refactoring.guru/design-patterns/state">
+                State
+            </a>
+    
+
+    
+
+    
+        </li>
+    
+
+            
+                
+    
+        <li class="">
+            <a href="https://refactoring.guru/design-patterns/strategy">
+                Strategy
+            </a>
+    
+
+    
+
+    
+        </li>
+    
+
+            
+                
+    
+        <li class="">
+            <a href="https://refactoring.guru/design-patterns/template-method">
+                Template Method
+            </a>
+    
+
+    
+
+    
+        </li>
+    
+
+            
+                
+    
+        <li class="">
+            <a href="https://refactoring.guru/design-patterns/visitor">
+                Visitor
+            </a>
+    
+
+    
+
+    
+        </li>
+    
+
+            
+        </ul>
+    
+
+    
+        </li>
+    
+
+            
+                
+    
+        <li class="menu-code-examples">
+            <a href="https://refactoring.guru/design-patterns/examples">
+                Code Examples
+            </a>
+    
+
+    
+        <ul>
+            
+                
+    
+        <li class="menu-code-examples-item">
+            <a href="https://refactoring.guru/design-patterns/csharp">
+                C#
+            </a>
+    
+
+    
+
+    
+        </li>
+    
+
+            
+                
+    
+        <li class="menu-code-examples-item">
+            <a href="https://refactoring.guru/design-patterns/cpp">
+                C++
+            </a>
+    
+
+    
+
+    
+        </li>
+    
+
+            
+                
+    
+        <li class="menu-code-examples-item">
+            <a href="https://refactoring.guru/design-patterns/go">
+                Go
+            </a>
+    
+
+    
+
+    
+        </li>
+    
+
+            
+                
+    
+        <li class="menu-code-examples-item">
+            <a href="https://refactoring.guru/design-patterns/java">
+                Java
+            </a>
+    
+
+    
+
+    
+        </li>
+    
+
+            
+                
+    
+        <li class="menu-code-examples-item">
+            <a href="https://refactoring.guru/design-patterns/php">
+                PHP
+            </a>
+    
+
+    
+
+    
+        </li>
+    
+
+            
+                
+    
+        <li class="menu-code-examples-item">
+            <a href="https://refactoring.guru/design-patterns/python">
+                Python
+            </a>
+    
+
+    
+
+    
+        </li>
+    
+
+            
+                
+    
+        <li class="menu-code-examples-item">
+            <a href="https://refactoring.guru/design-patterns/ruby">
+                Ruby
+            </a>
+    
+
+    
+
+    
+        </li>
+    
+
+            
+                
+    
+        <li class="menu-code-examples-item">
+            <a href="https://refactoring.guru/design-patterns/rust">
+                Rust
+            </a>
+    
+
+    
+
+    
+        </li>
+    
+
+            
+                
+    
+        <li class="menu-code-examples-item">
+            <a href="https://refactoring.guru/design-patterns/swift">
+                Swift
+            </a>
+    
+
+    
+
+    
+        </li>
+    
+
+            
+                
+    
+        <li class="menu-code-examples-item">
+            <a href="https://refactoring.guru/design-patterns/typescript">
+                TypeScript
+            </a>
+    
+
+    
+
+    
+        </li>
+    
+
+            
+        </ul>
+    
+
+    
+        </li>
+    
+
+            
+        </ul>
+    
+
+    
+        </li>
+    
+
+            
+        </ul>
+    
+                </div>
+
+            <div class="main-menu-aux-controls">
+                <a href="https://refactoring.guru/login" title="Sign in" style=" display: inline-flex; align-items: center; gap: 6px; "><svg style="width: 16px; height: 16px; filter:drop-shadow(0 1px 1px #74261e)" class="inline-block mx-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" opacity="0.4" d="M352.7 222.4c3.2 1 6.5 1.6 10 1.6l21.3 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-21.3 0c-.8 0-1.7 0-2.5 0c-.9 0-1.7-.1-2.5-.1c-1.7-.1-3.4-.2-5-.4C357.4 414 391.1 512 432 512c44.2 0 80-114.6 80-256S476.2 0 432 0c-40.6 0-74.2 96.9-79.3 222.4z"></path><path fill="currentColor" class="fa-primary" d="M320 48a48 48 0 1 0 -96 0 48 48 0 1 0 96 0zM125.7 175.5c9.9-9.9 23.4-15.5 37.5-15.5c1.9 0 3.8 .1 5.6 .3L137.6 254c-9.3 28 1.7 58.8 26.8 74.5l86.2 53.9-25.4 88.8c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l28.7-100.4c5.9-20.6-2.6-42.6-20.7-53.9L238 299l30.9-82.4 5.1 12.3C289 264.7 323.9 288 362.7 288l21.3 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-21.3 0c-12.9 0-24.6-7.8-29.5-19.7l-6.3-15c-14.6-35.1-44.1-61.9-80.5-73.1l-48.7-15c-11.1-3.4-22.7-5.2-34.4-5.2c-31 0-60.8 12.3-82.7 34.3L57.4 153.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l23.1-23.1zM91.2 352L32 352c-17.7 0-32 14.3-32 32s14.3 32 32 32l69.6 0c19 0 36.2-11.2 43.9-28.5L157 361.6l-9.5-6c-17.5-10.9-30.5-26.8-37.9-44.9L91.2 352z"></path></svg> Sign in</a>
+                <a href="https://feedback.refactoring.guru/?lang=en" class="userecho-public" rel="nofollow" title="Contact us"><i class="fa fa-fw fa-fw fa-envelope" aria-hidden="true"></i> Contact us</a>
+            </div>
+        </div>
+    </div>
+</aside>
+
+    <nav class="navigation" role="navigation">
+    <div class="navigation-container">
+        <a class="navigation-brand" href="https://refactoring.guru/">
+            <img alt="Refactoring.Guru" src="Adapter_files/logo-new-mobile.png" srcset="Adapter_files/logo-new-mobile-2x.png 2x">
+        </a>
+
+        <div class="shop-link d-none d-lg-block" style="">
+            <a class="btn btn-md btn-primary btn-featured" href="https://refactoring.guru/store"><svg style="width: 28px; height: 28px; fill: currentColor; display: inline-block; margin-top: -14px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M356 60l60 20-60 20-20 60-20-60L256 80l60-20L336 0l20 60zM464 208l48 16-48 16-16 48-16-48-48-16 48-16 16-48 16 48zm-243.8-9.8l33 66.9 73.8 10.7 59.8 8.7-43.3 42.2-53.4 52.1 12.6 73.5L313 512l-53.5-28.1-66-34.7-66 34.7L73.9 512l10.2-59.6 12.6-73.5L43.3 326.8 0 284.6l59.8-8.7 73.8-10.7 33-66.9L193.5 144l26.8 54.2zm26.1 114.4l-25-3.6-11.2-22.6-16.7-33.9-16.7 33.9L165.6 309l-25 3.6-37.4 5.4 27.1 26.4 18.1 17.6L144 387l-6.4 37.3 33.5-17.6 22.3-11.7 22.3 11.7 33.5 17.6L242.9 387l-4.3-24.9 18.1-17.6 27.1-26.4-37.4-5.4z"></path></svg>
+                Shop Now!</a>
+        </div>
+
+        <ul class="navigation-menu">
+                            <li class="nav-locale dropdown dropdown-locales">
+                    <button class="dropdown-toggle" id="dropdownLanguage" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-fw fa-globe" aria-hidden="true"></i> <span class="caption d-none d-lg-inline-block">English</span>
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownLanguage">
+                                                                                                                        <a href="https://refactoring.guru/design-patterns/adapter" class="dropdown-item locale-link active" data-locale="en" title="English">English</a>
+                                                                                                                                <a href="https://refactoring.guru/es/design-patterns/adapter" class="dropdown-item locale-link suggest suggest-no-anim" data-locale="es" title="Español">Español</a>
+                                                                                                                                <a href="https://refactoring.guru/fr/design-patterns/adapter" class="dropdown-item locale-link " data-locale="fr" title="Français">Français</a>
+                                                                                                                                <a href="https://refactoring.guru/ja/design-patterns/adapter" class="dropdown-item locale-link " data-locale="ja" title="日本語">日本語</a>
+                                                                                                                                <a href="https://refactoring.guru/ko/design-patterns/adapter" class="dropdown-item locale-link " data-locale="ko" title="한국어">한국어</a>
+                                                                                                                                <a href="https://refactoring.guru/pl/design-patterns/adapter" class="dropdown-item locale-link " data-locale="pl" title="Polski">Polski</a>
+                                                                                                                                <a href="https://refactoring.guru/pt-br/design-patterns/adapter" class="dropdown-item locale-link " data-locale="pt-br" title="Português Brasileiro">Português Brasileiro</a>
+                                                                                                                                <a href="https://refactoring.guru/ru/design-patterns/adapter" class="dropdown-item locale-link " data-locale="ru" title="Русский">Русский</a>
+                                                                                                                                <a href="https://refactoring.guru/uk/design-patterns/adapter" class="dropdown-item locale-link " data-locale="uk" title="Українська">Українська</a>
+                                                                                                                                <a href="https://refactoringguru.cn/design-patterns/adapter" class="dropdown-item locale-link " data-locale="zh" title="中文">中文</a>
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        </div>
+                </li>
+                        <li class="nav-contacts">
+                <a class="userecho-private" href="https://feedback.refactoring.guru/?lang=en&amp;show_feedback_form_private=true" rel="nofollow" title="Contact us">
+                    <i class="fa fa-fw fa-envelope" aria-hidden="true"></i> <span class="caption d-none d-xl-inline-block">Contact us</span>
+                </a>
+            </li>
+                            <li class="nav-user">
+                    <a href="https://refactoring.guru/login" title="Sign in"><span class="sign-in-icon"><svg style="width: 24px; height: 24px; " class="inline-block " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" opacity="0.4" d="M352.7 222.4c3.2 1 6.5 1.6 10 1.6l21.3 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-21.3 0c-.8 0-1.7 0-2.5 0c-.9 0-1.7-.1-2.5-.1c-1.7-.1-3.4-.2-5-.4C357.4 414 391.1 512 432 512c44.2 0 80-114.6 80-256S476.2 0 432 0c-40.6 0-74.2 96.9-79.3 222.4z"></path><path fill="currentColor" class="fa-primary" d="M320 48a48 48 0 1 0 -96 0 48 48 0 1 0 96 0zM125.7 175.5c9.9-9.9 23.4-15.5 37.5-15.5c1.9 0 3.8 .1 5.6 .3L137.6 254c-9.3 28 1.7 58.8 26.8 74.5l86.2 53.9-25.4 88.8c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l28.7-100.4c5.9-20.6-2.6-42.6-20.7-53.9L238 299l30.9-82.4 5.1 12.3C289 264.7 323.9 288 362.7 288l21.3 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-21.3 0c-12.9 0-24.6-7.8-29.5-19.7l-6.3-15c-14.6-35.1-44.1-61.9-80.5-73.1l-48.7-15c-11.1-3.4-22.7-5.2-34.4-5.2c-31 0-60.8 12.3-82.7 34.3L57.4 153.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l23.1-23.1zM91.2 352L32 352c-17.7 0-32 14.3-32 32s14.3 32 32 32l69.6 0c19 0 36.2-11.2 43.9-28.5L157 361.6l-9.5-6c-17.5-10.9-30.5-26.8-37.9-44.9L91.2 352z"></path></svg></span> <span class="account-icon" style="display:none"><svg style="width: 24px; height: 24px; " class="inline-block " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" opacity="0.4" d="M64 270.5l224-196c74.7 65.4 149.4 130.7 224.1 196.1l.4 177.3c.1 35.4-28.6 64.1-64 64.1l-320.4 0c-35.3 0-64-28.6-64-64L64 270.5zM176.1 433.6c.1 .5 .1 1.1 .2 1.6c.2 1 .5 2 .9 3c.8 1.9 2 3.6 3.4 5.1c2.9 2.9 6.9 4.7 11.3 4.7l192 0c8.8 0 16-7.2 16-16c0-44.2-35.8-80-80-80l-64 0c-22.1 0-42.1 9-56.6 23.4c-7.2 7.2-13.1 15.9-17.1 25.4c-2 4.8-3.6 9.8-4.7 15c-.5 2.6-.9 5.3-1.2 7.9c-.1 1.3-.2 2.7-.3 4.1c-.1 1.4-.1 2.7-.1 4.1c0 .6 0 1.1 .1 1.6zm48.2-184.2c-.1 1.1-.2 2.2-.2 3.2c-.1 1.1-.1 2.2-.1 3.3s0 2.2 .1 3.3c.1 1.1 .1 2.2 .2 3.2c.2 2.1 .5 4.3 1 6.4c.9 4.2 2.1 8.2 3.7 12c3.2 7.7 7.9 14.6 13.7 20.3C254.3 312.8 270.3 320 288 320c35.3 0 64-28.7 64-64s-28.7-64-64-64c-17.7 0-33.7 7.2-45.3 18.7c-5.8 5.8-10.5 12.7-13.7 20.3c-1.6 3.8-2.9 7.8-3.7 12c-.4 2.1-.8 4.2-1 6.4z"></path><path fill="currentColor" class="fa-primary" d="M309.1 7.9C297-2.6 279-2.6 266.9 7.9l-256 224c-13.3 11.6-14.6 31.9-3 45.2s31.9 14.6 45.2 3L288 74.5 522.9 280.1c13.3 11.6 33.5 10.3 45.2-3s10.3-33.5-3-45.2L512 185.5 512 64c0-17.7-14.3-32-32-32l-32 0c-17.7 0-32 14.3-32 32l0 37.5L309.1 7.9zM352 256a64 64 0 1 0 -128 0 64 64 0 1 0 128 0zm-96 96c-44.2 0-80 35.8-80 80c0 8.8 7.2 16 16 16l192 0c8.8 0 16-7.2 16-16c0-44.2-35.8-80-80-80l-64 0z"></path></svg></span> <span class="sign-out-icon" style="display:none"><svg style="width: 24px; height: 24px; " class="inline-block " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" opacity="0.4" d="M0 256C0 397.4 35.8 512 80 512c25.3 0 47.8-37.5 62.5-96L128 416c-.5 0-1.1 0-1.6 0c-.6 0-1.1-.1-1.6-.1c-1.1-.1-2.1-.3-3.2-.5c-2.1-.4-4.1-1.1-6-1.9c-3.8-1.6-7.3-4-10.2-6.9s-5.2-6.3-6.9-10.2c-.8-1.9-1.4-3.9-1.9-6c-.2-1.1-.4-2.3-.5-3.5c0-.3 0-.6-.1-.8c0-.2 0-.4 0-.7c0-.4 0-.7 0-.7c0-.5 0-.7 0-.9c0-.3 0-.6 0-.9c0 0 0-.3 0-.7c0-.2 0-.4 0-.7c0-.2 0-.4 .1-.8c0-.3 .1-.6 .1-.9c0-.2 .1-.4 .1-.7c.1-.8 .2-1.2 .3-1.7c.5-2.2 1.1-4.2 1.9-6.1c1.6-3.8 4-7.3 6.9-10.2c5.8-5.8 13.8-9.4 22.6-9.4l26.2 0c3.8-29.6 5.8-62.1 5.8-96c0-18.3-.6-36.1-1.7-53.4c-1.7-1.2-3.4-2.5-4.9-4c-.8-.8-1.6-1.6-2.2-2.5s-1.3-1.7-1.9-2.6c-1.2-1.8-2.1-3.6-2.9-5.5s-1.4-3.9-1.8-5.9c-.2-1-.3-2-.4-3s-.1-2-.2-3c0-8.3 3.1-16.5 9.4-22.8C141 63.1 112.8 0 80 0C35.8 0 0 114.6 0 256z"></path><path fill="currentColor" class="fa-primary" d="M416 48a48 48 0 1 0 -96 0 48 48 0 1 0 96 0zM221.7 175.5c9.9-9.9 23.4-15.5 37.5-15.5c1.9 0 3.8 .1 5.6 .3L233.6 254c-9.3 28 1.7 58.8 26.8 74.5l86.2 53.9-25.4 88.8c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l28.7-100.4c5.9-20.6-2.6-42.6-20.7-53.9L334 299l30.9-82.4 5.1 12.3C385 264.7 419.9 288 458.7 288l21.3 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-21.3 0c-12.9 0-24.6-7.8-29.5-19.7l-6.3-15c-14.6-35.1-44.1-61.9-80.5-73.1l-48.7-15c-11.1-3.4-22.7-5.2-34.4-5.2c-31 0-60.8 12.3-82.7 34.3l-23.1 23.1c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l23.1-23.1zM187.2 352L128 352c-17.7 0-32 14.3-32 32s14.3 32 32 32l69.6 0c19 0 36.2-11.2 43.9-28.5L253 361.6l-9.5-6c-17.5-10.9-30.5-26.8-37.9-44.9L187.2 352z"></path></svg></span> <span class="caption d-none d-xl-inline-block">Sign in</span></a>
+                </li>
+                        <li class="nav-menu">
+                <button class="navigation-toggle"><i class="fa fa-fw fa-bars" aria-hidden="true"></i></button>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+    <footer class="footer center-content">
+    <div class="footer-container center-content-container">
+        <div class="footer-inner container-fluid">
+            <div class="row">
+                <div class="col-8 col-md-10">
+                    <ul class="footer-list footer-list-horizontal">
+                        <li><a href="https://refactoring.guru/">Home</a></li>
+                        <li><a href="https://refactoring.guru/refactoring">Refactoring</a></li>
+                        <li><a href="https://refactoring.guru/design-patterns">Design Patterns</a></li>
+                        <li><a href="https://refactoring.guru/store">Premium Content</a></li>
+                        <li><a href="https://gitbybit.com/">Git Course</a></li>
+                        <li><a href="https://feedback.refactoring.guru/?lang=en" rel="nofollow" class="userecho-public">Forum</a></li>
+                        <li><a href="https://feedback.refactoring.guru/?lang=en&amp;show_feedback_form_private=true" rel="nofollow" class="userecho-private">Contact us</a></li>
+                    </ul>
+                </div>
+                <div class="col-4 col-md-2">
+                    <ul class="footer-list footer-list-iconic footer-list-right">
+                                                    <li><a href="https://www.facebook.com/refactoring.guru"><i class="fa fa-facebook-official"></i></a></li>
+                                                <li><a href="https://refactoring.guru/sendy/form" rel="nofollow"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+                        <li><a href="https://github.com/RefactoringGuru"><i class="fa fa-github-circled"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-second">
+        <div class="footer-container center-content-container">
+            <div class="footer-inner container-fluid">
+                <div class="row">
+                    <div class="col-12 col-sm-6">
+                        <i class="fa fa-fw fa-copyright"></i> 2014-2025 <a href="https://refactoring.guru/">Refactoring.Guru</a>. <span style="white-space: nowrap">All rights reserved.</span><br>
+                        <i class="fa fa-fw fa-image"></i> Illustrations by <a href="http://zhart.us/" rel="nofollow"><span style="white-space: nowrap">Dmitry Zhart</span></a>
+                    </div>
+                    <div class="footer-links-right col-12 col-sm-6 mt-4 mt-sm-0">
+                        <ul class="footer-list footer-list-horizontal footer-list-right">
+                            <li><a href="https://refactoring.guru/terms"><span>Terms &amp; Conditions</span></a>
+                            </li>
+                            <li><a href="https://refactoring.guru/privacy-policy"><span>Privacy Policy</span></a>
+                            </li>
+                            <li><a href="https://refactoring.guru/content-usage-policy"><span>Content Usage Policy</span></a>
+                            </li>
+                            <li><a href="https://refactoring.guru/site-about"><span>About us</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                                    <div class="row">
+                        <div class="col-12 col-sm-4">
+                            <div class="mt-4">
+                                                                    <b>Ukrainian office:</b><br>
+                                    <object class="fa-fw" style="height: 0.8rem; filter: invert(50%);" type="image/svg+xml" data="Adapter_files/fa-building.svg">
+                                        <img class="fa-fw" style="height: 0.8rem;" src="Adapter_files/fa-building.svg" alt="Organization address">
+                                    </object> FOP Olga Skobeleva<br>
+                                    <svg style="width: 16px; height: 16px; margin-right: 1px; fill: currentColor;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M352 192c0-88.4-71.6-160-160-160S32 103.6 32 192c0 15.6 5.4 37 16.6 63.4c10.9 25.9 26.2 54 43.6 82.1c34.1 55.3 74.4 108.2 99.9 140c25.4-31.8 65.8-84.7 99.9-140c17.3-28.1 32.7-56.3 43.6-82.1C346.6 229 352 207.6 352 192zm32 0c0 87.4-117 243-168.3 307.2c-12.3 15.3-35.1 15.3-47.4 0C117 435 0 279.4 0 192C0 86 86 0 192 0S384 86 384 192zm-240 0a48 48 0 1 0 96 0 48 48 0 1 0 -96 0zm48 80a80 80 0 1 1 0-160 80 80 0 1 1 0 160z"></path></svg> Abolmasova 7<br>
+                                    <span style="margin-left: 21px;">Kyiv, Ukraine, 02002</span><br>
+                                    <i class="fa fa-fw fa-envelope"></i>  Email: support@refactoring.guru
+                                
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-4">
+                            <div class="mt-4">
+                                <b>Spanish office:</b><br>
+                                <object class="fa-fw" style="height: 0.8rem; filter: invert(50%);" type="image/svg+xml" data="Adapter_files/fa-building.svg">
+                                    <img class="fa-fw" style="height: 0.8rem;" src="Adapter_files/fa-building.svg" alt="Organization address">
+                                </object> Oleksandr Shvets<br>
+                                <svg style="width: 16px; height: 16px; margin-right: 1px; fill: currentColor;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M352 192c0-88.4-71.6-160-160-160S32 103.6 32 192c0 15.6 5.4 37 16.6 63.4c10.9 25.9 26.2 54 43.6 82.1c34.1 55.3 74.4 108.2 99.9 140c25.4-31.8 65.8-84.7 99.9-140c17.3-28.1 32.7-56.3 43.6-82.1C346.6 229 352 207.6 352 192zm32 0c0 87.4-117 243-168.3 307.2c-12.3 15.3-35.1 15.3-47.4 0C117 435 0 279.4 0 192C0 86 86 0 192 0S384 86 384 192zm-240 0a48 48 0 1 0 96 0 48 48 0 1 0 -96 0zm48 80a80 80 0 1 1 0-160 80 80 0 1 1 0 160z"></path></svg> Avda Pamplona 64<br>
+                                <span style="margin-left: 21px;">Pamplona, Spain, 31009</span><br>
+                                <i class="fa fa-fw fa-envelope"></i>  Email: support@refactoring.guru
+                            </div>
+                        </div>
+                    </div>
+                            </div>
+        </div>
+    </div>
+</footer>
+
+</div>
+
+
+    <script defer="defer">
+    var CodeMirrorScripts = ["/js/codemirror.min.js?id=cb07f7f6cc70c9951e1c0da6a3aae38b"];
+</script>
+
+
+
+    <script>window.loadContent = true;window.loadCart = true;</script>
+
+
+<script src="Adapter_files/codemirror.min.js"></script></body></html>

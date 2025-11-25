@@ -4,137 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "5c6cde91a185a739",
+        "id": "e47edbcd2e828c3e",
         "type": "tabs",
         "children": [
           {
-            "id": "0efe20009ab45e09",
+            "id": "bca25e5df4df629b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
                 "file": "Patrones/Papers Bulletpoints.md",
-                "mode": "preview",
+                "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
               "title": "Papers Bulletpoints"
             }
-          },
-          {
-            "id": "dbdd9bdd94749bf6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Otro/Aconcagua y Chalten.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Aconcagua y Chalten"
-            }
-          },
-          {
-            "id": "933a7498cb7503f4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Teoricas/Method Lookup.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Method Lookup"
-            }
-          },
-          {
-            "id": "713582037a6e7f44",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Patrones/Pattern - Facade.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Pattern - Facade"
-            }
-          },
-          {
-            "id": "33015bc3c349d941",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Patrones/Pattern - Proxy.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Pattern - Proxy"
-            }
-          },
-          {
-            "id": "60d8efbf8dedc5cc",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Patrones/Pattern - Decorator.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Pattern - Decorator"
-            }
-          },
-          {
-            "id": "a3eb6cf264b84b76",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Patrones/Pattern - State.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Pattern - State"
-            }
-          },
-          {
-            "id": "be18018fc00a36c6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Patrones/Pattern - Strategy.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Pattern - Strategy"
-            }
-          },
-          {
-            "id": "c2badfd216a98bb3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Patrones/Pattern - Decorator.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Pattern - Decorator"
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -290,54 +177,54 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "dbdd9bdd94749bf6",
+  "active": "bca25e5df4df629b",
   "lastOpenFiles": [
+    "Patrones/Guru - Sitio web/Visitor/Visitor_files/web-cover-en.png",
+    "Patrones/Guru - Sitio web/Visitor/Visitor_files/web-cover-en-2x.png",
+    "Patrones/Guru - Sitio web/Visitor/Visitor_files/visitor.png",
+    "Patrones/Guru - Sitio web/Visitor/Visitor_files/visitor-comic-1.png",
+    "Patrones/Guru - Sitio web/Visitor/Visitor_files/visitor-comic-1-2x.png",
+    "Patrones/Guru - Sitio web/Visitor/Visitor_files/visitor-comic-1-1.5x.png",
+    "Patrones/Guru - Sitio web/Visitor/Visitor_files/visitor-2x.png",
+    "Patrones/Guru - Sitio web/Visitor/Visitor_files/visitor-1.5x.png",
+    "Patrones/Guru - Sitio web/Visitor/Visitor_files/typescript.svg",
+    "Patrones/Guru - Sitio web/Visitor/Visitor_files/tired-of-reading-banner.png",
+    "Patrones/Guru - Sitio web/Visitor/Visitor_files/tired-of-reading-banner-1x.mp4",
+    "Patrones/Guru - Sitio web/Visitor/Visitor_files/tea-cup.svg",
+    "Patrones/Guru - Sitio web/Visitor/Visitor_files/public.min.js",
+    "Patrones/Guru - Sitio web/Visitor/Visitor_files/public-packed.min.css",
+    "Patrones/Guru - Sitio web/Visitor/Visitor_files/paddle.js",
+    "Patrones/Guru - Sitio web/Visitor/Visitor_files/js",
+    "Patrones/Guru - Sitio web/Visitor/Visitor_files/codemirror.min.js",
+    "Patrones/Guru - Sitio web/Visitor/Visitor_files/checkout.min.js",
+    "Patrones/Guru - Sitio web/Template/Template Method_files/tired-of-reading-banner-1x.mp4",
+    "Patrones/Guru - Sitio web/Template/Template Method_files/public.min.js",
+    "Patrones/Guru - Sitio web/Template/Template Method_files/public-packed.min.css",
+    "Otro/Aconcagua y Chalten.md",
     "Patrones/Papers Bulletpoints.md",
     "Teoricas/Method Lookup.md",
-    "Otro/Aconcagua y Chalten.md",
-    "Otro",
     "Patrones/Pattern - Decorator.md",
     "Patrones/Pattern - Strategy.md",
     "Patrones/Pattern - State.md",
     "Patrones/Pattern - Proxy.md",
     "Patrones/Pattern - Facade.md",
-    "images/facadePattern.png",
     "Definiciones/Acoplamiento.md",
     "Teoricas/Excepciones.md",
-    "images/metamodelo.png",
     "Patrones/Pattern - Visitor.md",
     "Method dispatch generalized.md",
     "Teoricas/Esencia.md",
     "Patrones/Pattern - Observer.md",
-    "Teoricas/PDFs/Excepciones.pdf",
     "Heurísticas/Variadas.md",
-    "images/arbolRaiz.png",
-    "images/arbolHojas.png",
     "Teoricas/Metamodelo.md",
     "Object Recursion.md",
     "Definiciones/Polimorfismo.md",
     "Patrones/Pattern - Composite.md",
     "Heurísticas/Sacar if.md",
     "Heurísticas/Sacar código repetido.md",
-    "Teoricas/PDFs/Software-DesarrolloDeSoftware.pdf",
-    "Teoricas/PDFs/Objetos-1.pdf",
-    "Teoricas/PDFs/Introduccion.pdf",
-    "Teoricas/PDFs/HistoriaDeSmalltalk.pdf",
-    "Teoricas/PDFs/TDD.pdf",
-    "Teoricas/PDFs",
-    "Teoricas/New folder",
     "Blue Book Capítulos 6, 7, 8.md",
     "_templates/Summary Paper.md",
     "Patrones/Pattern - Adapter.md",
     "Patrones/Pattern - Abstract Factory.md",
-    "PDFs/active-variables-in-smalltalk-80.pdf",
-    "images/proxyPattern.png",
-    "images/decoratorPattern.png",
-    "images/compositePattern.png",
-    "images/adapterPattern.png",
-    "Definiciones/Waterfall.md",
-    "images/strategyPattern.png",
-    "images/visitorPattern.png",
     "Untitled.canvas"
   ]
 }
