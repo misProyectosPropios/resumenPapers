@@ -1,0 +1,1 @@
+**Definición**: Todos los objetos de un conjunto son polimórﬁcos entre si respecto de un conjunto de mensaje, si los objetos del primero responden semánticamente igual a los mensajes del segundo.
