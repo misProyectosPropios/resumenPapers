@@ -30,31 +30,18 @@
         "dimension": 59.78552278820375,
         "children": [
           {
-            "id": "b7fa61c770d372ac",
+            "id": "0f65bdbc028e348f",
             "type": "leaf",
             "state": {
               "type": "pdf",
               "state": {
-                "file": "PDFs/SELF-The Power of Simplicity.pdf"
+                "file": "PDFs/A simple technique for handling multiple polymorphism - double dispatch.pdf"
               },
               "icon": "lucide-file-text",
-              "title": "SELF-The Power of Simplicity"
-            }
-          },
-          {
-            "id": "117c8eeb804c80bd",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "PDFs/Polymorphic Hierarchy.pdf"
-              },
-              "icon": "lucide-file-text",
-              "title": "Polymorphic Hierarchy"
+              "title": "A simple technique for handling multiple polymorphism - double dispatch"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -111,7 +98,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 377.5
+    "width": 377.5,
+    "collapsed": true
   },
   "right": {
     "id": "9a2435cd3a9fe849",
@@ -213,9 +201,9 @@
   "active": "9967c25782777e5c",
   "lastOpenFiles": [
     "PDFs/A simple technique for handling multiple polymorphism - double dispatch.pdf",
+    "A Simple Technique for Handling Multiple Polymorphism.md",
     "PDFs/Polymorphic Hierarchy.pdf",
     "Polymorphic Hierarchies.md",
-    "A Simple Technique for Handling Multiple Polymorphism.md",
     "Self - The Power Of Simplicity.md",
     "PDFs/SELF-The Power of Simplicity.pdf",
     "Fail Fast.md",
@@ -242,7 +230,6 @@
     "Patrones/Guru - Sitio web/Visitor/Visitor_files/js",
     "Patrones/Guru - Sitio web/Visitor/Visitor_files/codemirror.min.js",
     "Patrones/Guru - Sitio web/Visitor/Visitor_files/checkout.min.js",
-    "Patrones/Guru - Sitio web/Template/Template Method_files/tired-of-reading-banner-1x.mp4",
     "Otro/Aconcagua y Chalten.md",
     "Teoricas/Method Lookup.md",
     "Patrones/Pattern - Decorator.md",
