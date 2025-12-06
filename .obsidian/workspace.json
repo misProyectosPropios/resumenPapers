@@ -199,12 +199,14 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "d1caa7564b1586cd",
+  "active": "84664a34eccd0ad0",
   "lastOpenFiles": [
-    "A Simple Technique for Handling Multiple Polymorphism.md",
-    "Active Variables In Smalltalk-80.md",
     "PDFs/null_object.pdf",
     "Null Object Pattern.md",
+    "images/nullPattern.png",
+    "Blue Book Capítulos 6, 7, 8.md",
+    "A Simple Technique for Handling Multiple Polymorphism.md",
+    "Active Variables In Smalltalk-80.md",
     "No Silver Bullet – Essence and Accident in Software Engineering.md",
     "Programming As Theory Building.md",
     "Design Patterns - Elements of Reusable Object-Oriented Software.md",
@@ -232,7 +234,6 @@
     "Patrones/Guru - Sitio web/Visitor/Visitor_files/web-cover-en.png",
     "Patrones/Guru - Sitio web/Visitor/Visitor_files/web-cover-en-2x.png",
     "Patrones/Guru - Sitio web/Visitor/Visitor_files/visitor.png",
-    "Patrones/Guru - Sitio web/Visitor/Visitor_files/visitor-comic-1.png",
     "Patrones/Guru - Sitio web/Visitor/Visitor_files/tired-of-reading-banner-1x.mp4",
     "Patrones/Guru - Sitio web/Visitor/Visitor_files/public.min.js",
     "Patrones/Guru - Sitio web/Visitor/Visitor_files/public-packed.min.css",
@@ -245,7 +246,6 @@
     "Patrones/Pattern - Strategy.md",
     "Patrones/Pattern - State.md",
     "Patrones/Pattern - Proxy.md",
-    "Patrones/Pattern - Facade.md",
     "Untitled.canvas"
   ]
 }
