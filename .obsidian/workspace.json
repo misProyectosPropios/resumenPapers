@@ -33,12 +33,14 @@
             "id": "d1caa7564b1586cd",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "PDFs/null_object.pdf"
+                "file": "Blue Book Capítulos 6, 7, 8.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-file-text",
-              "title": "null_object"
+              "icon": "lucide-file",
+              "title": "Blue Book Capítulos 6, 7, 8"
             }
           }
         ]
@@ -199,12 +201,13 @@
   },
   "active": "d1caa7564b1586cd",
   "lastOpenFiles": [
-    "Null Object Pattern.md",
+    "A Simple Technique for Handling Multiple Polymorphism.md",
+    "Active Variables In Smalltalk-80.md",
     "PDFs/null_object.pdf",
+    "Null Object Pattern.md",
     "No Silver Bullet – Essence and Accident in Software Engineering.md",
     "Programming As Theory Building.md",
     "Design Patterns - Elements of Reusable Object-Oriented Software.md",
-    "A Simple Technique for Handling Multiple Polymorphism.md",
     "The Design of Everyday Things.md",
     "Design Principles Behind Smalltalk.md",
     "Fail Fast.md",
@@ -219,7 +222,6 @@
     "images/figure1Figure2.png",
     "PDFs/SELF-The Power of Simplicity.pdf",
     "Method Object.md",
-    "Active Variables In Smalltalk-80.md",
     "PDFs/A simple technique for handling multiple polymorphism - double dispatch.pdf",
     "Polymorphic Hierarchies.md",
     "Self - The Power Of Simplicity.md",
