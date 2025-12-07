@@ -73,7 +73,7 @@ Si veo que ya implementé el mismo métodos en otra clase y que se comporta de l
 + Si una es subimplementor de otra: `Missing a superimplementor`
 + Si son peer clases y no hay superimplementor: agregar una clase nueva que genera la jerarquía
 
->  La mejora frase: **I don’t want to duplicate any effort I can avoid.** 
+>  La mejor frase: **I don’t want to duplicate any effort I can avoid.** 
 ## The Template Class Pattern
 **Definition**:  The abstract class I introduced to make the hierarchy polymorphic is what I call a “Template Class.” Template Class is a pattern that creates polymorphic hierarchie
 
