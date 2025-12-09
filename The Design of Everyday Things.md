@@ -35,11 +35,11 @@ Lo que no hay que hacer
 ## The Psychology of Everyday Things
 
 Importance of
-+ Visibility
-+ Appropriate clues
-+ Feedback of one's actions
++ **Visibility**
++ **Appropriate clues**
++ **Feedback of one's actions**
 
-Psychology of how people interact with things.
+**Psychology of how people interact with things.**
 
 
 
@@ -63,8 +63,7 @@ Example:
 > When simple things need pictures, labels, or instructions, the design has failed.
 
 ### psychology of causality
-**Definition:**
-+ Something that happens right after an action appears to be caused by
+**Definition:** Something that happens right after an action appears to be caused by
 that action
 
 
@@ -88,26 +87,26 @@ How do people cope?
 Information available from the appearance of the objects—the psychology of everyday things
 ## CONCEPTUAL MODELS
 
-It's useful to simulate mentally its operation of a model. 
+It's useful to **simulate mentally its operation of a mode**l. 
 + You can do the simulation because the parts are visible and the implications clear
 
 
 Other clues
-+ Affordances
-+ Constraints: limit the possible fingers
-+ Mappings: between objects and what to do to any of them one - one.
++ **Affordances**: what we perceive that an object could do
++ **Constraints**: what a design limits us to do. Example: a scicsoor with holes of different size
++ **Mappings**: between *objects* and *what to do to any of them* one - one.
 
 
 
 ## Principles of Design for Understandability and Usability
 
-1. provide a good conceptual model
-2. make things visible.
+1. provide a good **conceptual model**
+2. make **things visible.**
 
 ### PROVIDE A GOOD CONCEPTUAL MODEL
 
-+ It allows us to predict the effects of our actions.
-+ Without it, we operate blindly. We do operations without knowing why it happens, what effects to exepct or what to do if things go wrong
++ It allows us to *predict* the **effects of our actions**.
++ Without it, we operate *blindly*. We do operations without *knowing why it happens*, what effects to exepct or *what to do if things go wrong*
 	+ Things go wrong -> we don't know how to solve them
 
 
@@ -130,8 +129,8 @@ Example bad conceptual model
 
 #### Why is it difficult?
 
-No visible structure.
-Mappings are arbitrary: there is no rhyme or reason to the relationship between the actions the user must perform and the results to be accomplished
+**No visible structure.**
+*Mappings* are *arbitrary*: there is no rhyme or reason to the relationship between the actions the user must perform and the results to be accomplished
 
 > the number of possible actions exceeds the number of controls, there is apt to be difficulty
 
@@ -206,3 +205,12 @@ poor design.
 
 
 > added complexity and difficulty cannot be avoided when functions are added, but with clever design, they can be minimized.
+
+
+## Extra
+
+**signifiers**:   **Perceptible cues** indicating what actions are possible.
+
++ Signifiers are perceptual hints that shape the user's behavior.
+
+**principles of perception**: The fundamental ways humans *interpret* what *they see*, hear, and *interact* with.

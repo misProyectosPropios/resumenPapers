@@ -35,19 +35,33 @@ Another approach:
 
 ![[objectRecursionStructure.png]]
 
+## Participants
+
++ **Initiator** (Client): initiates the request.
++ **Handler** (Comparable) − defines a type that can handle requests that initiators make.
++ **Recurser**: 
+	+ defines the successor link.
+	+ handles a request by delegating it to its successors.
+	+ successors relevant to a request can vary by request.
+	+ can perform extra behavior before or after delegating the request.
+	+ may be a terminator for a different request.
++ **Terminator** (Integer) 
+	+ finishes the request by implementing it completely and not delegating any of its implementation.
+	+ may be a recurser for a different request.
+
 ## Consequences
-Advantages 
-+ Distributed processing: distributed across a structure of handlers that can be as numerous and arranged as complexly as necessary to best complete the task.
-+ Responsability flexibility:
+**Advantages** 
++ *Distributed processing*: distributed across a structure of handlers that can be as numerous and arranged as complexly as necessary to best complete the task.
++ *Responsability flexibility:*
 	+ Initiator doesn't know about all the handles, arrengament or processing
 	+ Handler arrangment can change at runtime to reconfigure the handling responsabilities
-+ Role flexibility:
++ *Role flexibility:*
 	+ + Handler accs as a recurses may be a terminator for another request
-+ Increased encapsulation:
++ *Increased encapsulation:*
 	+ Encapsuletes the how to handle a request
 
-Disadventages
-+ Programming complexity: it may be difficult and it may be overused and there could me many sent messages that are difficult to understand.
+**Disadventages**
++ *Programming complexity*: it may be difficult and it may be overused and there could me many sent messages that are difficult to understand.
 
 ## Implementation
 

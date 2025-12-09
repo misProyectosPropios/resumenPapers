@@ -20,6 +20,13 @@ Usamos **Ryle's Theory**. Quien posee una teoría es capaz de hacer ciertas cosa
 
 Se basa en el _“knowing how”_, es decir un conocimiento práctico
 
++ El **propósito del programa**: el problema real que intenta resolver, sus restricciones y las motivaciones detrás de las decisiones de diseño.
++ La **estrategia de la solución**: es el entendimiento de _cómo_ el programa resuelve el problema:
++ **rol de cada parte dentro del todo**: comprensión de cómo cada módulo, función o estructura contribuye al enfoque general
++ Saber _reconocer similitudes relevantes_
+	+ aplicar principios generales a situaciones nuevas,
+	- ver cuándo dos problemas “son del mismo tipo”,
+	- identificar patrones útiles.
 ## The Theory To Be Built by the Programmer
 
 Los programadores tienen que crear una teoría sobre como ciertos aspectos de la vida real serán tratados o manejados por un programa. 
@@ -45,10 +52,10 @@ A partir  de las ideas de features, queremos modificar el programa y no empezar 
 
 ## Program Life, Death, and Revival
 
-Un programa está vivo cuando el equipo que lo diseño mantiene el control del programa y sus modificaciones.
-Un programa está muerto cuando el equipo que diseño el software se disolvió. Un programa muerto puede seguir usandose hasta que falle o requiera modificaciones en donde se verá la muerte del programa. 
+Un programa está **vivo** cuando el equipo que lo diseño mantiene el control del programa y sus modificaciones.
+Un programa está **muerto** cuando el equipo que diseño el software se disolvió. Un programa muerto puede seguir usandose hasta que falle o requiera modificaciones en donde se verá la muerte del programa. 
 
-`Un  programa no muere cuando deja de ejecutarse, sino cuando **nadie conserva la teoría interna que lo explica**`.
+> Un  programa no muere cuando deja de ejecutarse, sino cuando **nadie conserva la teoría interna que lo explica**. Es decir, no queda nadie del euqipo que lo desarrolló y le dejo la teoría al resto
 
 El renacimiento de un programa es la reconstrucción de la teoría por un equipo nuevo de desarrolladores.
 
