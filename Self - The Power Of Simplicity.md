@@ -60,4 +60,15 @@ Blocks are similar to objects (store behavior and state)
 **Self**: created with objects.
 
 + **Local variables**: require storage for local variables: *slots*
-+ 
++ **Environment link.** instead of having separate scope information, a closure’s parent link performs this function
+
+self operand: 
++ start the message lookup with the current activation recor
++ set the receiver of the messageto be the same as the current receive
+
++ creates a **method object** that acts as a _template_.
++ When the method is called, Self **clones it** to create the activation (like a stack frame)
++ block carries a pointer to the **method activation where it was created**. So blocks correctly capture non-local variables, like closures.
+## Speculation: Where is Self headed?
+
+**Behaviorism**: objects are passive: an object is what it is. In self, an object is what it does
