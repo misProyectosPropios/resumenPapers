@@ -69,9 +69,9 @@ Los principios por los que se basaron:
 ### Future Work
 
 The continued application of the principles in this paper
-+ message protocols have not been formalized.
-+  clearly other aspects to human thought that have not been addressed in this paper. 
++ message **protocols** have **not** been **formalized**.
++ clearly other aspects to **human thought** that have not been **addressed** in this paper. 
 
-> **Se confundió muchisimo**
+> **Se confundió muchisimo en esta sección** 
 
 **Natural Selection**: Languages and systems that are of sound design will persist, to be supplanted only by better ones.

@@ -58,7 +58,7 @@ Un programa está **muerto** cuando el equipo que diseño el software se disolvi
 > Un  programa no muere cuando deja de ejecutarse, sino cuando **nadie conserva la teoría interna que lo explica**. Es decir, no queda nadie del euqipo que lo desarrolló y le dejo la teoría al resto
 
 El renacimiento de un programa es la reconstrucción de la teoría por un equipo nuevo de desarrolladores.
-+ It is strictly impossible
++ It is strictly impossible only with the documentation
 
 > It is hardly conceivable that the revival would be assigned to new programmers without at least some knowledge of the theory had by the original team. Even so the Theory Building View suggests strongly that program revival should only be attempted in exceptional situations and with full awareness that it is at best costly, and may lead to a revived theory that differs from the one originally had by the program authors and so may contain discrepancies with the program text.
 
