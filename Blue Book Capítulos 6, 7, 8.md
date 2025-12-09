@@ -100,5 +100,121 @@ Protocol
 
 ### Class Time
 
++ represents a particular second in a day
+	+ start at midnight.
+
+General Protocol
+
++ ``millisecondCIockValue``: number of milliseconds since themillisecond clock was last reset or rolled over to 0.
++ ``millisecondsToRun: timedBIock``: the number of milliseconds timedBIock takes to return its value.
++ ``timeWords``: seconds (in Greenwich Mean Time) since Jan. 1, 1901
++ ``totalSeconds``: total seconds from Jan. 1, 1901,
++ ``dateAndTimeNow``: Array whose first element is the current date (an instance of class Date that represents today's date) and whose second element is the current time
+
+#### Instace creation
++ `now`: instance of Time representing thesecond the message is sent.
++ `fromSeconds: secondCount`: instance of Time that is secondCount number of seconds since midnight.
+
+#### arithmetic
+
++  ``addTime: timeAmount``: instance of Time that is the argument, timeAmount, after the receiver.
++ ``subtractTime: timeAmount``: instance of Time that is the argument, timeAmount, before the receiver.
+
+#### Converting
+
++ ``asSeconds``: 
+	+ Time: number of seconds since midnight that the receiver represents. 
+	+ Date: number of seconds between a time on January 1, 1901, and the same time in the receiver's day.
+
+
+### Class Character
+#### instance creation
++ ``value: anlnteger``: the asci value. Character value: 65 is a capital "A".
++ ``digitValue: anlnteger``: the value starting from 0. For parsing, very useful
+
+
+#### Accesing
+
+
++ ``asciiValue``:
++ ``digitValue``:
+
+#### testing
++ ``isAIphaNumeric``
++ ``isDigit``
++ ``isLetter``
++ ``isLowercase``
++ ``isUppercase``
++ ``isSeparator``
++ `isVowel`
+
+
 ## Chapter 8
 
+### Number Classes
+One of objetive of Smalltalk:  
+	A single metaphor for information processing as uniformly as possible.
+
+> Metaphor: objects that communicate by sending messages
+
++ number classes have been implemented so that all numbers behave as if they were of the most general type.
++ a number is its value, which should never change. The object 3, for example, should never change its state to 4, or disastrous effects could occur.
+
+
+#### arithmetic
+
++ `+ a.Num.ber`
+-  `- aNumber`
+-  `. aNumber`
+-  `/ aNumber`
+-  `// aNumber`: integer quotinet toward minus infinitive
+-  `\\\\ aNumber`: integer remainder toward minus infinitive
+- `abs`
+- `negated`
+- `quo: aNumber`: integer quotient defined by division with truncation toward zero.
+- `rem: aNumber`: integer remainder defined by divisionwith truncation toward zero.
+- `reciprocal`
+
+
+#### mathematical functions
+
++ `exp`
++ `In`
++ `log: al),lumber`
++ `floorLog: radix`
++ `raisedTo: aNumber`
++ `raisedTolnteger: anlnteger`: must be a kind of Integer.
++ `sqrt`
++ `squared`
+
+
+#### testing
+
++ `even`
++ `odd`
++ `negative`: less than 0.
++ `positive`: greater than or equal to 0.
++ `strictlyPositive`: receiver is greater than 0.
++ `sign`: Answer 1 if the receiver is greater than 0, answer-1 if less than 0, else answer 0.
+
+
+#### truncation and round off
+
++ `ceiling`: integer nearest the receiver toward positive infinity
++ `floor` integer nearest the receiver toward negative infinity.
++ `truncated`: integer nearest the receiver toward zero.
++ `truncateTo: aNumber`: next multiple of the argument, aNumber, that is nearest the receiver toward zero.
++ `rounded`: integer nearest the receiver.
++ `roundTo: aNumber`: multiple of the argument, aNumber, that is nearest the receiver.
+
+#### intervals
++ `to: stop`
++ `to: stop by: step`
++ `to: stop do: aBIock`
++ `to: stop by: step do: aBIock`
+
+
+
+### Random:
+
++ `rand next`: can then be evaluated whenever a new random number is needed. The response is a number (Float) between 0.0 and 1.0.
