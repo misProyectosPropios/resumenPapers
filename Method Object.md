@@ -9,7 +9,7 @@ If applied Composed method, messages with many parameters.
 
 ## Solution: 
 
-Create an object to represent an invocation of the method and use the shared namespace of instance variables in the object to enable further simplification using Composed Method. However, these objects have a very different flavor than most objects. Most objects are nouns, these are verbs. Most objects are easily explainable to clients, these are not because they have no analog in the real world.
+Create an object to represent an invocation of the method and use the shared namespace of instance variables in the object to enable further simplification using Composed Method. However, these objects have a very different flavor than most objects. Most objects are nouns, these are verbs. Most objects are easily explainable to clients, these are not because they have no analog in the real world. They represent verbs and actions
 
 ## Technique
 
